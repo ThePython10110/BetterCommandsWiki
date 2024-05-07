@@ -23,7 +23,9 @@ A branch may terminate halfway and does nothing (does not execute `run` subcomma
 
 Note that `... run execute ...` has no effect at all. For example, the following commands work the same:
 
-`execute as @e[type=pig] as @e[type=pig] run summon pig` `execute as @e[type=pig] run execute as @e[type=pig] run execute run execute run summon pig`
+`execute as @e[type=pig] as @e[type=pig] run summon pig`
+
+`execute as @e[type=pig] run execute as @e[type=pig] run execute run /execute run summon pig`
 
 Better Commands' version of `/execute` acts like the non-coffee-flavored version of ACOVG in that it processes subcommands depth-first. This means that after forking, all the following subcommands are considered as a whole and are executed once for each branch.
 
@@ -37,7 +39,7 @@ I haven't quite figured this part out yet.
 
 There are currently eight subcommands (eventually, there will be 12-13) for the `/execute` command, and each has its own special syntax, so describing syntax takes a large branching tree.
 
-### Full syntax tree
+#### Full syntax tree
 
 `/execute ...`
 
@@ -51,3 +53,14 @@ There are currently eight subcommands (eventually, there will be 12-13) for the 
 * `... run <command>`
 
 where `-> execute` represents the start of another subcommand that is required.
+
+#### Modifier subcommands
+
+**align**
+
+Updates the execution position, aligning to its current block position (integer coordinates). Applies only along specified axes. This akin to flooring the coordinates - i.e. rounding then \*downward\* (not toward zero).
+
+{% hint style="info" %}
+what is a hint
+{% endhint %}
+
