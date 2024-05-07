@@ -4,13 +4,13 @@ Runs any Better Command (to deal with the problem of overriding commands)
 
 ## Syntax
 
-`/bc <command: BetterCommand> ...`
+`/bc <command> ...`
 
 ## Arguments
 
-`<command: BetterCommand>`
+`<command>`
 
-Specifies the Better Command to run
+Specifies the Better Command to run (such as `/give` or `give`)
 
 `...`
 

@@ -1,7 +1,9 @@
 # Table of contents
 
 * [Home](README.md)
-* [Command list](command-list/README.md)
-  * [/ability](command-list/ability.md)
-  * [/bc](command-list/bc.md)
-  * [/execute](command-list/execute.md)
+* [Commands](commands/README.md)
+  * [/ability](commands/ability.md)
+  * [/bc](commands/bc.md)
+  * [/execute](commands/execute.md)
+* [Target Selectors](target-selectors.md)
+* [Coordinates](coordinates.md)
