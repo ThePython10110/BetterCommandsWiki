@@ -245,7 +245,7 @@ All non player entities move one space in the direction of their nearest player 
 
 <summary><code>positioned</code></summary>
 
-Sets the _execution position_, without changing _execution rotation_ or _dimension_; can match an entity's position
+Sets the _execution position_, without changing _execution rotation_ or _dimension_; can match an entity's position.
 
 _**Syntax**_
 
@@ -265,9 +265,9 @@ Must be three-dimensional coordinates. Accepts [tilde and caret notations](../co
 
 Option: `positioned as <targets>`
 
-`<targets>`:entity
+`<targets>`: entity
 
-The target(s) to rotate toward.
+The target(s) to match position with.
 
 Must be a player name or [target selector](../target-selectors.md).
 
@@ -287,3 +287,79 @@ Say the name of the player closest to (0, 64, 0): `execute positioned 0 64 0 run
 
 </details>
 
+<details>
+
+<summary><strong><code>rotated</code></strong></summary>
+
+Sets the _execution rotation_, can match an entity's rotation.
+
+_**Syntax**_
+
+`rotated <yaw> [pitch] -> execute`
+
+`rotated as <targets> -> execute`
+
+_**Arguments**_
+
+Option: `rotated <rot>`
+
+`<yaw>`: Rotation
+
+The left/right rotation, in degrees (N = 0, W = 90, S = 180, E = 270)
+
+Wraps around, so 360 is the same as 0, and 365 is the same as 5.
+
+Accepts [tilde notation](../coordinates.md).
+
+`[pitch]`: Rotation
+
+The up/down rotation, in degrees (up = -89.5, down = 89.5).
+
+Does not wrap around, so 90 is the same as 89.5 and -90 is the same as -89.5.
+
+The opposite of what's actually shown on the F5 screen, interestingly.
+
+Accepts [tilde notation](../coordinates.md).
+
+Option: `rotated as <targets>`
+
+`<targets>`: Entity
+
+The target(s) to match rotation with.
+
+Must be a player name or [target selector](../target-selectors.md).
+
+_**Result**_
+
+_Execution rotation_ is updated.
+
+Causes an error if the argument is not specified correctly.
+
+Forks if `<targets>` selects multiple entities.
+
+Terminates current branch if `<targets>` or `origin: target` fails to resolve to one or more entities (named players must be online).
+
+_**Example**_
+
+Move every sheep 1 block in the direction that the player closest to it is facing: `execute as @e[type=sheep] at @s rotated as @p run tp @s ^ ^ ^1`
+
+
+
+</details>
+
+#### Run subcommand
+
+The `run` command's single argument is the command to be executed, the context variables of which may be modified by the subcommands used.
+
+_**Syntax**_
+
+`run <command>`
+
+_**Arguments**_
+
+`<command>`: Command\
+Can be any [Better Command](./)
+
+_**Result**_
+
+Execute this command. Fails if <_command_> fails.
