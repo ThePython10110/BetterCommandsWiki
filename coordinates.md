@@ -1,3 +1,0 @@
-# Coordinates
-
-Stuff here soon

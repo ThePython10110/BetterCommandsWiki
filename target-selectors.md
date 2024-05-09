@@ -34,8 +34,8 @@ All arguments must be satisfied for an entity to be selected.
 
 Here is the current list of arguments:
 
-* `x`/`y`/`z`: Changes the position for the `distance`/`rm`/`r` arguments. If one or more are left out, they stay the same.
-* `distance`: Distance from where the command was run. This supports ranges (described below).
+* `x`/`y`/`z`: Changes the position for the `distance`/`rm`/`r` arguments. If one or more are left out, they stay the same. For example, `@e[y=3.5, z=~-10, distance=..10]` selects all entities within 10 nodes of `~ 3.5 ~-10` (relative to where the command was run).
+* `distance`: Distance from where the command was run. This supports ranges.
 * `rm`/`r`: Identical to `distance=<rm>..<r>` (this is slightly different from ACOVG's usage, since it is inclusive and supports floats). `m` is for minimum.
 * `name`: The name of the entity
 * `type`: The entity ID (for example `mobs_mc:zombie`).

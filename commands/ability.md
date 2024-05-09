@@ -10,7 +10,7 @@ Gets and sets player privileges.
 
 ## Arguments
 
-`player`: Player
+`player`: Selector
 
 Specifies the player for which to grant/revoke/query the privilege.
 

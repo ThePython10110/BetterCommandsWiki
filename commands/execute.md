@@ -101,7 +101,7 @@ _Syntax_
 
 _Arguments_
 
-`<anchor>`: `eyes` or `feet`
+`<anchor>`:  String (either`eyes` or `feet`)
 
 Whether to anchor the executed command to eyes or feet.
 
@@ -119,7 +119,7 @@ _Syntax_
 
 _Arguments_
 
-`<targets>`: Entity
+`<targets>`: Selector
 
 Target entity/entities to become the new executor.
 
@@ -155,7 +155,7 @@ _Syntax_
 
 _Arguments_
 
-`<targets>`: Entity
+`<targets>`: Selector
 
 Target entity/entities to match position, rotation, and dimension with. Must be a player name or [target selector.](../target-selectors.md)
 
@@ -202,17 +202,17 @@ Options: `facing <pos>`
 
 Coordinates to rotate toward.
 
-Must be three-dimensional coordinates. Accepts [tilde and caret notations](../coordinates.md).
+Must be three-dimensional coordinates. Accepts [tilde and caret notations](../data-types.md).
 
 Options: `facing entity <targets> <anchor>`
 
-`<targets>`: Entity
+`<targets>`: Selector
 
 The target(s) to rotate toward.
 
 Must be a player name or [target selector](../target-selectors.md).
 
-`<anchor>`: `eyes` or `feet`
+`<anchor>`: String
 
 Whether to face the target's _eyes_ or _feet_
 
@@ -261,11 +261,11 @@ Option: `positioned <pos>`
 
 New position.
 
-Must be three-dimensional coordinates. Accepts [tilde and caret notations](../coordinates.md).
+Must be three-dimensional coordinates. Accepts [tilde and caret notations](../data-types.md).
 
 Option: `positioned as <targets>`
 
-`<targets>`: entity
+`<targets>`: Selector
 
 The target(s) to match position with.
 
@@ -301,7 +301,7 @@ _**Syntax**_
 
 _**Arguments**_
 
-Option: `rotated <rot>`
+Option: `rotated <yaw> [pitch]`
 
 `<yaw>`: Rotation
 
@@ -309,7 +309,7 @@ The left/right rotation, in degrees (N = 0, W = 90, S = 180, E = 270)
 
 Wraps around, so 360 is the same as 0, and 365 is the same as 5.
 
-Accepts [tilde notation](../coordinates.md).
+Accepts [tilde notation](../data-types.md).
 
 `[pitch]`: Rotation
 
@@ -319,11 +319,11 @@ Does not wrap around, so 90 is the same as 89.5 and -90 is the same as -89.5.
 
 The opposite of what's actually shown on the F5 screen, interestingly.
 
-Accepts [tilde notation](../coordinates.md).
+Accepts [tilde notation](../data-types.md).
 
 Option: `rotated as <targets>`
 
-`<targets>`: Entity
+`<targets>`: Selector
 
 The target(s) to match rotation with.
 
@@ -357,7 +357,7 @@ _**Syntax**_
 
 _**Arguments**_
 
-`<command>`: Command\
+`<command>`: Long string\
 Can be any [Better Command](./)
 
 _**Result**_

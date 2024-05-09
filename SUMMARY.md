@@ -6,4 +6,4 @@
   * [/bc](commands/bc.md)
   * [/execute](commands/execute.md)
 * [Target Selectors](target-selectors.md)
-* [Coordinates](coordinates.md)
+* [Data types](data-types.md)
