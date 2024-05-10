@@ -11,8 +11,8 @@ description: The complete list of Better Commands
 | [`/bc <command>`](bc.md)                                                               | Runs any Better Command                                                                              |
 | [`/execute align\|anchored\|as\|at\|facing\|positioned\|rotated\|run ...`](execute.md) | Runs a Better Command after changing the context)                                                    |
 | [`/gamemode <gamemode> [player]`](gamemode.md)                                         | Sets a player's gamemode                                                                             |
-| `/give <player> <item> [count] [wear]`                                                 | Gives items to players (or self if `<player>` left out)                                              |
-| `/giveme ...`                                                                          | Alias for `/give @s ...`                                                                             |
+| [`/give <player> <item> [count] [wear]`](give.md)                                      | Gives items to players                                                                               |
+| [`/giveme ...`](give.md)                                                               | Alias for `/give @s ...`                                                                             |
 | `/kill [entity]`                                                                       | Kills entities (or self if `<player>` left out)                                                      |
 | `/killme`                                                                              | Equivalent to `/kill @s`                                                                             |
 | `/me <message>`                                                                        | Sends a message about yourself; can include entity selectors if you have the `server` priv           |
