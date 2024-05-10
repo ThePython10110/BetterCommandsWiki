@@ -30,6 +30,4 @@ Both of these examples give the executor `default:dirt`
 
 ## History
 
-| Version | Action       |
-| ------- | ------------ |
-| v1.0    | Added `/old` |
+<table data-full-width="false"><thead><tr><th>Version</th><th>Action</th></tr></thead><tbody><tr><td>v1.0</td><td>Added <code>/old</code></td></tr></tbody></table>

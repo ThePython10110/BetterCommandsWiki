@@ -20,7 +20,9 @@ Specifies the player(s) to send the message to.
 
 `<message>` Long string
 
-Specifies the message to tell. Can include target selectors if executed by a command block or a player with the `server` privilege.
+Specifies the message to tell.
+
+Can include target selectors if executed by a command block or a player with the `server` privilege.
 
 ## Examples
 

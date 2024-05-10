@@ -11,5 +11,8 @@
   * [/me](commands/me.md)
   * [/msg](commands/msg.md)
   * [/old](commands/old.md)
+  * [/say](commands/say.md)
+  * [/summon](commands/summon.md)
 * [Target Selectors](target-selectors.md)
 * [Data types](data-types.md)
+* [Entity Aliases](entity-aliases.md)

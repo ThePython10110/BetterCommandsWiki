@@ -18,10 +18,10 @@ description: The complete list of Better Commands
 | [`/me <message>`](me.md)                                                               | Sends a message about yourself; can target  selectors if you have the `server` privilege                  |
 | [`/msg <target> <message>`](msg.md)                                                    | Sends a private message; can include target selectors if you have the `server` privilege                  |
 | [`/old <command>`](old.md)                                                             | Runs any command overridden by a Better Command                                                           |
-| `/say <message>`                                                                       | Sends a message to all connected players; can include target selectors if you have the `server` privilege |
-| `/summon <entity> [pos] [rot]`                                                         | Summons an entity                                                                                         |
+| [`/say <message>`](say.md)                                                             | Sends a message to all connected players; can include target selectors if you have the `server` privilege |
+| [`/summon <entity> [pos] [rot]`](summon.md)                                            | Summons an entity                                                                                         |
 | `/scoreboard objectives\|players ...`                                                  | Manipulates the scoreboard                                                                                |
-| `/setblock <pos> <node> [keep\|replace]`                                               | Places a node (supports metadata/param1/param2)                                                           |
+| `/setblock <pos> <node> [keep\|replace]`                                               | Places a node                                                                                             |
 | `/setnode`                                                                             | Alias for `/setblock`                                                                                     |
 | `/team add\|empty\|join\|leave\|list\|modify\|remove ...`                              | Manipulates teams.                                                                                        |
 | `/teleport ...`                                                                        | Sets entities' position and rotation (too many argument combinations).                                    |

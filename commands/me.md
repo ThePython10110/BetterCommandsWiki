@@ -12,7 +12,9 @@ description: Broadcasts a narrative message about yourself.
 
 `<action>` Long string
 
-Specifies the message to display. Can include target selectors if executed by a command block or a player with the `server` privilege.
+Specifies the message to display.
+
+Can include target selectors if executed by a command block or a player with the `server` privilege.
 
 ## Examples
 
