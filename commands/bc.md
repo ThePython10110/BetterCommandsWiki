@@ -10,7 +10,7 @@ description: Runs any Better Command (to deal with the problem of overriding com
 
 ## Arguments
 
-`<command>` Long string
+`<command>` [Long string](../data-types.md#long-string)
 
 Specifies the Better Command to run (such as `/give` or `give`)
 
