@@ -132,13 +132,13 @@ Changes the display name of the targets' scores (if `[displayName]` is not speci
 
 Sets the number format of the targets' scores to blank, which indicates that the score is not shown.
 
-`scoreboard players display numberformat <targets> <objective> fixed <contents>`&#x20;
+`scoreboard players display numberformat <targets> <objective> fixed <contents>`
 
 Sets the number format of the targets' scores to fixed, which indicates that the score is replaced by `<contents>`.
 
 `scoreboard players display numberformat <targets> <objective> styled <color>`
 
-&#x20;Sets the number format of the targets' scores to styled, which indicates that the score is displayed with the selected color.
+Sets the number format of the targets' scores to styled, which indicates that the score is displayed with the selected color.
 
 ### Arguments
 
@@ -174,7 +174,7 @@ If not specified, or `*`, default is minimum or maximum value, respectively.
 
 `<targetObjective>` [String](../data-types.md#string)
 
-Specifies the objective for targets.&#x20;
+Specifies the objective for targets.
 
 Must be a single word containing only alphanumeric characters and underscores.
 
@@ -210,10 +210,10 @@ Specifies the display name.
 
 Specifies display text
 
-`<color>[String](../data-types.md#string)
+`<color>` [String](../data-types.md#string)
 
 Any valid [Minetest colorstring](https://api.minetest.net/colors) or team color.
 
 ## History
 
-<table><thead><tr><th width="341">Version</th><th>Action</th></tr></thead><tbody><tr><td>v1.0</td><td>Added <code>/scoreboard</code></td></tr><tr><td>v2.0</td><td>Added <code>picked_up.&#x3C;itemstring></code>, <code>mined.&#x3C;itemstring></code>, <code>dug.&#x3C;itemstring></code>, <code>placed.&#x3C;itemstring></code>, and <code>crafted.&#x3C;itemstring></code> scoreboard criteria</td></tr></tbody></table>
+<table><thead><tr><th width="341">Version</th><th>Action</th></tr></thead><tbody><tr><td>v1.0</td><td>Added <code>/scoreboard</code></td></tr><tr><td>v2.0</td><td>Added <code>picked_up.&#x3C;itemstring></code>, <code>mined.&#x3C;itemstring></code>, <code>dug.&#x3C;itemstring></code>, <code>placed.&#x3C;itemstring></code>, and <code>crafted.&#x3C;itemstring></code> scoreboard criteria, as well as the ability to change the sort direction.</td></tr></tbody></table>

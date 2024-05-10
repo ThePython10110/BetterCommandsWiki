@@ -29,3 +29,10 @@ description: The complete list of Better Commands
 | [`/trigger <objective> [add\|set <value>]`](trigger.md)                                | Allows players to set their own scores in controlled ways.                                                |
 | [`/tp`](teleport.md)                                                                   | Alias for `/teleport`                                                                                     |
 | [`/w`](msg.md)                                                                         | Alias for `/msg`                                                                                          |
+
+## History
+
+| Version | Action                                                         |
+| ------- | -------------------------------------------------------------- |
+| v1.0    | Added a whole bunch of commands that I don't want to list here |
+| v2.0    | Added `/gamemode`                                              |
