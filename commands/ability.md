@@ -1,6 +1,8 @@
-# /ability
+---
+description: Gets and sets player privileges.
+---
 
-Gets and sets player privileges.
+# /ability
 
 ## Syntax
 

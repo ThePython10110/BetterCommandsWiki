@@ -1,3 +1,7 @@
+---
+description: A list of data types.
+---
+
 # Data types
 
 ## String
@@ -35,6 +39,22 @@ Any positive or negative number from -99,999,999,999,999 (negative 100 trillion 
 `3.141592`
 
 `-65535`
+
+## Range
+
+Either a number or values in the format \[`min]..[max]`. Only one of `[min]` and `[max]` is required. Ranges are inclusive.
+
+#### Examples:
+
+`6` (matches exactly 6)
+
+`3..5` (matches any number between 3 and 5, inclusive)
+
+`-293.5..` (matches any number greater than or equal to -293.5
+
+`...4` (matches any number less than or equal to .4)
+
+`1..-1` (matches no numbers, since no numbers are >= 1 but <= -1)
 
 ## Boolean
 
@@ -110,9 +130,31 @@ One or two values, intended to be used as yaw (left/right rotation) and sometime
 
 `~1 ~-1` (1 degree counterclockwise and one degree up from the current direction)
 
-
-
 ## Selector
 
 See [Target Selectors](target-selectors.md).
+
+## Item/Node
+
+An itemstring or item alias, with optional metadata in `[square brackets]`. Nodes support param1 and param2 being set this way.
+
+Items can also be specified with a `count` and `wear` value.
+
+#### Item Examples
+
+`default:dirt` = dirt
+
+`dirt` = dirt (alias)
+
+`dirt[color=green]` = green dirt
+
+`dirt[color=green] 24` = 24 green dirt
+
+`default:pick_wood[color=green] 1 32768` = a green half-worn wooden pickaxe
+
+#### Node Examples
+
+`default:dirt` = dirt
+
+`default:water_flowing[param2=3]` = flowing water (level 3)
 

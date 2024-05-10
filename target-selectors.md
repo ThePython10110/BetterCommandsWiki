@@ -1,9 +1,12 @@
+---
+description: Target selectors allow you to choose specific entities.
+---
+
 # Target Selectors
 
-Everywhere you would normally enter a player name, you can use a target selector instead. Target selectors let you choose multiple entities and narrow down exactly which ones you want to include.
+There are 6 selectors:
 
-There are 5 selectors:
-
+* A player name.
 * `@s`: Self (the player or command block running the command)
 * `@a`: All players
 * `@e`: All entities
@@ -30,7 +33,7 @@ This selector selects all MCLA/VL zombies named Bob.
 
 All arguments must be satisfied for an entity to be selected.
 
-`@s` ignores all arguments, unlike in ACOVG.
+`@s` and player names do not support arguments.
 
 Here is the current list of arguments:
 
@@ -44,3 +47,16 @@ Here is the current list of arguments:
 * `level`: Filters entities based on their experience level (MineClone-like games only). Non-players are excluded. This supports ranges.
 * `lm`/`r`: Identical to `level=<lm>..<m>` (this is slightly different from ACOVG's usage, since it is inclusive and supports floats). `m` is for minimum.
 * `gamemode`/`m`: Filters entities based on gamemode (in non-MineClone-like games, they are filtered by whether they have the `creative` privilege). Non-players are excluded. Valid values are currently `creative` and `survival`.
+
+
+
+### Excluding with `!`
+
+Some arguments (such as `name` and `type`) allow you to prefix the value with `!`. This means that it will match anything _except_ the entered value. For example, since `@e[type=player]` matches all players, `@e[type=!player]` matches all entities that are _not_ players. Arguments testing for equality cannot be duplicated, while arguments testing for inequality can. In other words, you can have as many `type=!<something>` as you want but only one `type=<something>`.
+
+## History
+
+| Version | Action                                                         |
+| ------- | -------------------------------------------------------------- |
+| v1.0    | Added target selectors                                         |
+| v2.0    | Added `level`, `lm`/`l`, and `gamemode`/`m` selector arguments |

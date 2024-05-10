@@ -1,6 +1,8 @@
-# /execute
+---
+description: Runs a Better Command after changing the context
+---
 
-Runs a Better Command after changing the context
+# /execute
 
 ## Usage
 

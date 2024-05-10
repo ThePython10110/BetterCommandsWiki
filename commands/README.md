@@ -1,3 +1,7 @@
+---
+description: The complete list of Better Commands
+---
+
 # Commands
 
 | Command                                                                                | Description                                                                                          |
@@ -6,7 +10,7 @@
 | [`/ability <player> <priv> [true\|false]`](ability.md)                                 | Gets and sets player privs                                                                           |
 | [`/bc <command>`](bc.md)                                                               | Runs any Better Command                                                                              |
 | [`/execute align\|anchored\|as\|at\|facing\|positioned\|rotated\|run ...`](execute.md) | Runs a Better Command after changing the context)                                                    |
-| `/gamemode <gamemode> [player]`                                                        | Sets a player's gamemode                                                                             |
+| [`/gamemode <gamemode> [player]`](gamemode.md)                                         | Sets a player's gamemode                                                                             |
 | `/give <player> <item> [count] [wear]`                                                 | Gives items to players (or self if `<player>` left out)                                              |
 | `/giveme ...`                                                                          | Alias for `/give @s ...`                                                                             |
 | `/kill [entity]`                                                                       | Kills entities (or self if `<player>` left out)                                                      |

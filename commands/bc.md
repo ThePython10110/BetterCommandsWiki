@@ -1,6 +1,8 @@
-# /bc
+---
+description: Runs any Better Command (to deal with the problem of overriding commands)
+---
 
-Runs any Better Command (to deal with the problem of overriding commands)
+# /bc
 
 ## Syntax
 
