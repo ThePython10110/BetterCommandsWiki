@@ -14,7 +14,7 @@ description: 'Places a node (aliases: /setnode)'
 
 Specifies the position of the block to be changed.
 
-`<node>` [Node](../data-types.md#node)
+`<node>` [Node](../data-types.md#item-node)
 
 Specifies the new node.
 

@@ -24,7 +24,7 @@ If there is not enough room in the player's inventory, gives the specified item(
 
 Specifies the target(s) to give item(s) to.
 
-`<item>` [Item](../data-types.md#item)
+`<item>` [Item](../data-types.md#item-node)
 
 Specifies the item to give.
 
