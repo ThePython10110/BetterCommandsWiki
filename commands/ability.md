@@ -10,17 +10,17 @@ Gets and sets player privileges.
 
 ## Arguments
 
-`player`: Selector
+`<player>` Selector
 
 Specifies the player for which to grant/revoke/query the privilege.
 
 Must be a player name or target selector.
 
-`ability`: String
+`<ability>` or \[`ability]` String
 
-Specifies the player privilege (such as `fly` or `server`.
+Specifies the player privilege (such as `fly` or `server`).
 
-`value`: Boolean
+`[value]` Boolean
 
 Specifies the value to set the ability to, must be either `true` or `false`. If not specified, returns the current privilege's value.
 

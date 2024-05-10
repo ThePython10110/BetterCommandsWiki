@@ -68,7 +68,7 @@ _Usage_
 
 _Arguments_
 
-`<axes>`: String
+`<axes>` String
 
 Any non-repeating combination of the characters 'x', 'y', and 'z'. Axes can be declared in any order, but they cannot duplicate. (For example, `x`, `xz`, `zyx`, or `yz`.)
 
@@ -81,7 +81,7 @@ Given (-1.8, 2.3, 5.9), `execute align xz` changes the position to (-2, 2.3, 5).
 </details>
 
 {% hint style="warning" %}
-The **`anchored`** subcommand currently does nothing. This will eventually change.
+The **`anchored`** subcommand currently does nothing (well, it sets the execution anchor, but the execution anchor doesn't do anything). This will eventually change.
 {% endhint %}
 
 <details>
@@ -89,8 +89,6 @@ The **`anchored`** subcommand currently does nothing. This will eventually chang
 <summary><code>anchored</code></summary>
 
 **anchored**
-
-The `anchored` subcommand currently does nothing. This will change eventually.
 
 Sets the _execution anchor_ to the eyes or feet. Defaults to feet.\
 Running `positioned <pos> -> execute` resets to feet.
@@ -101,7 +99,7 @@ _Syntax_
 
 _Arguments_
 
-`<anchor>`:  String (either`eyes` or `feet`)
+`<anchor>`  String (either`eyes` or `feet`)
 
 Whether to anchor the executed command to eyes or feet.
 
@@ -119,11 +117,9 @@ _Syntax_
 
 _Arguments_
 
-`<targets>`: Selector
+`<targets>` Selector
 
 Target entity/entities to become the new executor.
-
-Must be a player name or [target selector](../target-selectors.md)
 
 _Result_
 
@@ -157,7 +153,7 @@ _Arguments_
 
 `<targets>`: Selector
 
-Target entity/entities to match position, rotation, and dimension with. Must be a player name or [target selector.](../target-selectors.md)
+Target entity/entities to match position, rotation, and dimension with.
 
 _Result_
 
@@ -179,7 +175,7 @@ Kill the player running the command, because "`at`" does not change the executor
 </details>
 
 {% hint style="warning" %}
-Ignore any mention of the execution anchor. There is no `<anchor>` argument in the `facing` subcommand, although there will be eventually.
+Ignore any mention of the execution anchor. There is no `[anchor]` argument in the `facing` subcommand, although there will be eventually.
 {% endhint %}
 
 <details>
@@ -192,31 +188,27 @@ _**Syntax**_
 
 `facing <pos> -> execute`
 
-`facing entity <targets> <anchor> -> execute`
+`facing entity <targets> [anchor] -> execute`
 
 _**Arguments**_
 
 Options: `facing <pos>`
 
-`<pos>`: Position
+`<pos>` Position
 
 Coordinates to rotate toward.
 
-Must be three-dimensional coordinates. Accepts [tilde and caret notations](../data-types.md).
+Options: `facing entity <targets> [anchor]`
 
-Options: `facing entity <targets> <anchor>`
-
-`<targets>`: Selector
+`<targets>` Selector
 
 The target(s) to rotate toward.
 
 Must be a player name or [target selector](../target-selectors.md).
 
-`<anchor>`: String
+`[anchor]` String (either `eyes` or `feet`)
 
 Whether to face the target's _eyes_ or _feet_
-
-Must be either `eyes` or `feet`.
 
 _**Result**_
 
@@ -230,13 +222,13 @@ Terminates current branch if `<targets>` or `origin: target` fails to resolve to
 
 _**Example**_
 
-Executor rotates once to the left: `execute facing ^1 ^ ^ run tp @s ~ ~ ~ ~ ~`
+Executor rotates one degree to the left: `execute facing ^1 ^ ^ run tp @s ~ ~ ~ ~ ~`
 
 All entities move one block in the direction of (0, 64, 0) (without changing their rotation): `execute as @e at @s facing 0 64 0 run tp @s ^ ^ ^1`
 
 All entities move one block in the direction of (0, 64, 0) (with changing their rotation): `execute as @e at @s facing 0 64 0 run tp ^ ^ ^1 ~ ~`
 
-All non player entities move one space in the direction of their nearest player (without changing their rotation): `execute as @e[type=!player] at @s facing entity @p feet run tp @s ^ ^ ^1`\
+All non player entities move one space in the direction of their nearest player (without changing their rotation): `execute as @e[type=!player] at @s facing entity @p run tp @s ^ ^ ^1`\
 
 
 </details>
@@ -257,19 +249,15 @@ _**Arguments**_
 
 Option: `positioned <pos>`
 
-`<pos>`: Position
+`<pos>` Position
 
 New position.
 
-Must be three-dimensional coordinates. Accepts [tilde and caret notations](../data-types.md).
-
 Option: `positioned as <targets>`
 
-`<targets>`: Selector
+`<targets>` Selector
 
 The target(s) to match position with.
-
-Must be a player name or [target selector](../target-selectors.md).
 
 _**Result**_
 
@@ -279,7 +267,7 @@ Causes an error if the argument is not specified correctly.
 
 Forks if `<targets>` selects multiple entities.
 
-Terminates current branch if `<targets>` or `origin: target` fails to resolve to one or more entities (named players must be online).
+Terminates current branch if `<targets>` fails to resolve to one or more entities (named players must be online).
 
 _**Example**_
 
@@ -295,31 +283,17 @@ Sets the _execution rotation_, can match an entity's rotation.
 
 _**Syntax**_
 
-`rotated <yaw> [pitch] -> execute`
+`rotated <rot> -> execute`
 
 `rotated as <targets> -> execute`
 
 _**Arguments**_
 
-Option: `rotated <yaw> [pitch]`
+Option: `rotated <rot>`
 
-`<yaw>`: Rotation
+`<rot>` Rotation
 
-The left/right rotation, in degrees (N = 0, W = 90, S = 180, E = 270)
-
-Wraps around, so 360 is the same as 0, and 365 is the same as 5.
-
-Accepts [tilde notation](../data-types.md).
-
-`[pitch]`: Rotation
-
-The up/down rotation, in degrees (up = -89.5, down = 89.5).
-
-Does not wrap around, so 90 is the same as 89.5 and -90 is the same as -89.5.
-
-The opposite of what's actually shown on the F5 screen, interestingly.
-
-Accepts [tilde notation](../data-types.md).
+The rotation (yaw and optionally pitch), in degrees
 
 Option: `rotated as <targets>`
 
@@ -337,7 +311,7 @@ Causes an error if the argument is not specified correctly.
 
 Forks if `<targets>` selects multiple entities.
 
-Terminates current branch if `<targets>` or `origin: target` fails to resolve to one or more entities (named players must be online).
+Terminates current branch if `<targets>` fails to resolve to one or more entities (named players must be online).
 
 _**Example**_
 
@@ -357,9 +331,25 @@ _**Syntax**_
 
 _**Arguments**_
 
-`<command>`: Long string\
+`<command>` Long string\
 Can be any [Better Command](./)
 
 _**Result**_
 
 Execute this command. Fails if <_command_> fails.
+
+## Examples
+
+Teleport all zombies five nodes in the direction of the nearest player.
+
+`execute as @e[type=zombie] at @s facing @p run tp ^ ^ ^5`
+
+Make every entity say the name of the nearest other entity.
+
+`execute as @e at @s run say @e[sort=nearest,limit=1,distance=.1..]`
+
+## History
+
+| Version | Action           |
+| ------- | ---------------- |
+| v1.0    | Added `/execute` |

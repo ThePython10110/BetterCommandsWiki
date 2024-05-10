@@ -41,3 +41,6 @@ Here is the current list of arguments:
 * `type`: The entity ID (for example `mobs_mc:zombie`).
 * `sort`: The method for sorting entities. Can be `arbitrary` (default for `@a` and `@e`), `nearest` (default for `@p`), `furthest`, or `random` (default for `@r`).
 * `limit`/`c`: The maximum number of entites to match. `limit` and `c` do exactly the same thing, and only one can be included.
+* `level`: Filters entities based on their experience level (MineClone-like games only). Non-players are excluded. This supports ranges.
+* `lm`/`r`: Identical to `level=<lm>..<m>` (this is slightly different from ACOVG's usage, since it is inclusive and supports floats). `m` is for minimum.
+* `gamemode`/`m`: Filters entities based on gamemode (in non-MineClone-like games, they are filtered by whether they have the `creative` privilege). Non-players are excluded. Valid values are currently `creative` and `survival`.
