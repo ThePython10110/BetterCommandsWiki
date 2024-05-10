@@ -10,7 +10,7 @@ description: Gets and sets player privileges.
 
 ## Arguments
 
-`<player>` [Selector](../data-types.md#selector)
+`<player>` [Selector](../target-selectors.md)
 
 Specifies the player for which to grant/revoke/query the privilege.
 

@@ -46,7 +46,7 @@ Must be a single word containing only alphanumeric characters and underscores.
 
 Specifies the team name to be displayed.
 
-`[members]` [Selector](../data-types.md#selector) or String
+`[members]` [Selector](../target-selectors.md) or (../data-types.md#string)
 
 Specifies the entities to join or leave the team.
 

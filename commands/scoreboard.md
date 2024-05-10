@@ -142,13 +142,13 @@ Sets the number format of the targets' scores to fixed, which indicates that the
 
 ### Arguments
 
-`<target>` [Selector](../data-types.md#selector) or String
+`<target>` [Selector](../target-selectors.md) or (../data-types.md#string)
 
 Specifies the score holder.
 
 It must be either a target selector, a fake player name, or `*` for all score holders being tracked by the scoreboard system. Named players do not have to be online.
 
-`<targets>` [Selector](../data-types.md#selector) or String
+`<targets>` [Selector](../target-selectors.md) or (../data-types.md#string)
 
 Specifies the score holders.
 
@@ -178,7 +178,7 @@ Specifies the objective for targets.&#x20;
 
 Must be a single word containing only alphanumeric characters and underscores.
 
-`<source>` [Selector](../data-types.md#selector) or String
+`<source>` [Selector](../target-selectors.md) or (../data-types.md#string)
 
 Specifies the source score holders whose scores are used as source inputs.
 

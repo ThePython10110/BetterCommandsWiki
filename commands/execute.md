@@ -119,7 +119,7 @@ _Syntax_
 
 _Arguments_
 
-`<targets>` [Selector](../data-types.md#selector)
+`<targets>` [Selector](../target-selectors.md)
 
 Target entity/entities to become the new executor.
 
@@ -153,7 +153,7 @@ _Syntax_
 
 _Arguments_
 
-`<targets>` [Selector](../data-types.md#selector)
+`<targets>` [Selector](../target-selectors.md)
 
 Target entity/entities to match position, rotation, and dimension with.
 
@@ -202,7 +202,7 @@ Coordinates to rotate toward.
 
 Options: `facing entity <targets> [anchor]`
 
-`<targets>` [Selector](../data-types.md#selector)
+`<targets>` [Selector](../target-selectors.md)
 
 The target(s) to rotate toward.
 
@@ -257,7 +257,7 @@ New position.
 
 Option: `positioned as <targets>`
 
-`<targets>` [Selector](../data-types.md#selector)
+`<targets>` [Selector](../target-selectors.md)
 
 The target(s) to match position with.
 
@@ -299,7 +299,7 @@ The rotation (yaw and optionally pitch), in degrees
 
 Option: `rotated as <targets>`
 
-`<targets>` [Selector](../data-types.md#selector)
+`<targets>` [Selector](../target-selectors.md)
 
 The target(s) to match rotation with.
 

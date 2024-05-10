@@ -24,7 +24,7 @@ Specifies the position to summon the entity. If not specified, defaults to the p
 
 Specifies the rotation (yaw and optionally pitch) of the summoned entity. If not specified, defaults to the rotation of the command's executor.
 
-`<target>` [Selector](../data-types.md#selector)
+`<target>` [Selector](../target-selectors.md)
 
 Specifies the entity the summoned entity should face.
 

@@ -10,7 +10,7 @@ description: 'Sends a private message to one or more players. (aliases: /w, /tel
 
 ## Arguments
 
-`<targets>` [Selector](../data-types.md#selector)
+`<targets>` [Selector](../target-selectors.md)
 
 Specifies the player(s) to send the message to.
 
