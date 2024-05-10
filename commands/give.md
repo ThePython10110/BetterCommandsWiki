@@ -42,5 +42,3 @@ Specifies the item to give.
 | Version | Action        |
 | ------- | ------------- |
 | v1.0    | Added `/give` |
-|         |               |
-|         |               |

@@ -1,3 +1,7 @@
+---
+description: Better Commands by ThePython10110
+---
+
 # Home
 
 Welcome to the Better Commands wiki! Currently, there isn't much here. I'm slowly adding stuff, mostly copying from ACOVG's Wiki.
