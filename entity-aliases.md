@@ -1,3 +1,9 @@
 # Entity Aliases
 
-Maybe just a complete list... but then I have to probably write code to create the list.
+I've created entity aliases for mobs from several mods. You can see them [here](https://github.com/ThePython10110/better\_commands/blob/master/entity\_aliases.lua). It may not be the most readable, but it shouldn't be too bad.
+
+## History
+
+| Version | Action                                                                                                                                                                                                                             |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| v1.0    | Added entity aliases from Animalia, Dmobs, Draconis, Wilhelmines Living Nether, Mobs Animal, balrog (flux's fork), Water Mobs, Mob Horse, Mob Mese Monster Classic, Mobs Monster, Mobs Skeletons, VoxelLibre/Mineclonia, and NSSM. |

@@ -1,5 +1,5 @@
 ---
-description: Sends a private message to one or more players.
+description: 'Sends a private message to one or more players. (aliases: /w, /tell)'
 ---
 
 # /msg
@@ -7,10 +7,6 @@ description: Sends a private message to one or more players.
 ## Syntax
 
 `msg <targets> <message>`
-
-`tell <targets> <message>`
-
-`w <targets> <message>`
 
 ## Arguments
 

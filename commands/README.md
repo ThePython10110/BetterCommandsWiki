@@ -20,12 +20,12 @@ description: The complete list of Better Commands
 | [`/old <command>`](old.md)                                                             | Runs any command overridden by a Better Command                                                           |
 | [`/say <message>`](say.md)                                                             | Sends a message to all connected players; can include target selectors if you have the `server` privilege |
 | [`/summon <entity> [pos] [rot]`](summon.md)                                            | Summons an entity                                                                                         |
-| `/scoreboard objectives\|players ...`                                                  | Manipulates the scoreboard                                                                                |
-| `/setblock <pos> <node> [keep\|replace]`                                               | Places a node                                                                                             |
-| `/setnode`                                                                             | Alias for `/setblock`                                                                                     |
-| `/team add\|empty\|join\|leave\|list\|modify\|remove ...`                              | Manipulates teams.                                                                                        |
-| `/teleport ...`                                                                        | Sets entities' position and rotation (too many argument combinations).                                    |
+| [`/scoreboard objectives\|players ...`](scoreboard.md)                                 | Manipulates the scoreboard                                                                                |
+| [`/setblock <pos> <node> [keep\|replace]`](setblock.md)                                | Places a node                                                                                             |
+| [`/setnode`](setblock.md)                                                              | Alias for `/setblock`                                                                                     |
+| [`/team add\|empty\|join\|leave\|list\|modify\|remove ...`](team.md)                   | Manipulates teams.                                                                                        |
+| [`/teleport ...`](teleport.md)                                                         | Sets entities' position and rotation (too many argument combinations).                                    |
 | [`/tell`](msg.md)                                                                      | Alias for `/msg`                                                                                          |
-| `/trigger <objective> [add\|set <value>]`                                              | Allows players to set their own scores in controlled ways.                                                |
-| `/tp`                                                                                  | Alias for `/teleport`                                                                                     |
+| [`/trigger <objective> [add\|set <value>]`](trigger.md)                                | Allows players to set their own scores in controlled ways.                                                |
+| [`/tp`](teleport.md)                                                                   | Alias for `/teleport`                                                                                     |
 | [`/w`](msg.md)                                                                         | Alias for `/msg`                                                                                          |
