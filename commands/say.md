@@ -10,7 +10,7 @@ description: Broadcasts message in the chat to all players on the server.
 
 ## Arguments
 
-`<message>` Long string
+`<message>` [Long string](../data-types.md#long-string)
 
 Specifies the message to say.
 

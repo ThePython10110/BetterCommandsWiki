@@ -30,27 +30,27 @@ Teleports the entity(s) to a certain position and changes their rotation to the 
 
 ## Arguments
 
-`<targets>` Selector
+`<targets>` [Selector](../data-types.md#selector)
 
 Specifies the entity(s) to be teleported. If not specified, defaults to the command's executor.
 
-`<pos>` Position
+`<pos>` [Position](../data-types.md#position)
 
 Specifies the coordinates to teleport the target(s) to.
 
-`<destination>` Selector
+`<destination>` [Selector](../data-types.md#selector)
 
 Specifies the entity to teleport the target(s) to.
 
-`<rotation>` Rotation
+`<rotation>` [Rotation](../data-types.md#rotation)
 
 Specifies the rotation.
 
-`<facingPos>` Position
+`<facingPos>` [Position](../data-types.md#position)
 
 Specifies the coordinates to make the target(s) face towards.
 
-`<facingEntity>` Selector
+`<facingEntity>` [Selector](../data-types.md#selector)
 
 Specifies the entity to make the target(s) face towards.
 

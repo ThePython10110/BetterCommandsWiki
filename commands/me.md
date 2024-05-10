@@ -10,7 +10,7 @@ description: Broadcasts a narrative message about yourself.
 
 ## Arguments
 
-`<action>` Long string
+`<action>` [Long string](../data-types.md#long-string)
 
 Specifies the message to display.
 

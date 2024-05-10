@@ -10,7 +10,7 @@ description: Sets a player's game mode.
 
 ## Arguments
 
-`<gamemode>` String
+`<gamemode>` [String](../data-types.md#string)
 
 Specifies the new game mode.
 
@@ -19,7 +19,7 @@ Must be one of the following:
 * `survival` (can be abbreviated as `s` or `0`)
 * `creative` (can be abbreviated as `c` or `1`)
 
-`[target]` Selector
+`[target]` [Selector](../data-types.md#selector)
 
 Specifies the target(s). If not specified, defaults to the player who executes the command.
 

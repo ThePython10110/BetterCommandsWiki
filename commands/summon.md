@@ -12,19 +12,19 @@ description: Summons an entity.
 
 ## Arguments
 
-`<entity>` String (entity ID or alias)
+`<entity>` [String](../data-types.md#string) (entity ID or alias)
 
 Specifies the entity to be summoned. You can include the entity's staticdata in \[square brackets]. If an entity alias is used, and the alias matches multiple different entities, chooses a random one.
 
-`[pos]` Position
+`[pos]` [Position](../data-types.md#position)
 
 Specifies the position to summon the entity. If not specified, defaults to the position of the command's execution.
 
-`[rot]` Rotation
+`[rot]` [Rotation](../data-types.md#rotation)
 
 Specifies the rotation (yaw and optionally pitch) of the summoned entity. If not specified, defaults to the rotation of the command's executor.
 
-`<target>` Selector
+`<target>` [Selector](../data-types.md#selector)
 
 Specifies the entity the summoned entity should face.
 

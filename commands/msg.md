@@ -10,11 +10,11 @@ description: 'Sends a private message to one or more players. (aliases: /w, /tel
 
 ## Arguments
 
-`<targets>` Selector
+`<targets>` [Selector](../data-types.md#selector)
 
 Specifies the player(s) to send the message to.
 
-`<message>` Long string
+`<message>` [Long string](../data-types.md#long-string)
 
 Specifies the message to tell.
 

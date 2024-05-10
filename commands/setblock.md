@@ -10,15 +10,15 @@ description: 'Places a node (aliases: /setnode)'
 
 ## Arguments
 
-`<pos>` Position
+`<pos>` [Position](../data-types.md#position)
 
 Specifies the position of the block to be changed.
 
-`<node>`: Node
+`<node>` [Node](../data-types.md#node)
 
 Specifies the new node.
 
-`[keep|replace]` String
+`[keep|replace]` [String](../data-types.md#string)
 
 Specifies how to handle the node change. Must be one of:
 

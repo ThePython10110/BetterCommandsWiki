@@ -20,11 +20,11 @@ If there is not enough room in the player's inventory, gives the specified item(
 
 ## Arguments
 
-`<targets>` Selector
+`<targets>` [Selector](../data-types.md#selector)
 
 Specifies the target(s) to give item(s) to.
 
-`<item>` Item
+`<item>` [Item](../data-types.md#item)
 
 Specifies the item to give.
 

@@ -16,7 +16,7 @@ Kills entities. If, for some reason, entities do not die when attempting to kill
 
 ## Arguments
 
-`[targets]` Selector
+`[targets]` [Selector](../data-types.md#selector)
 
 Specifies the target(s) to kill. If not specified, defaults to the player who executed the command.
 

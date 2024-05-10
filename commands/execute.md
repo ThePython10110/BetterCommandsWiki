@@ -70,7 +70,7 @@ _Usage_
 
 _Arguments_
 
-`<axes>` String
+`<axes>` [String](../data-types.md#string)
 
 Any non-repeating combination of the characters 'x', 'y', and 'z'. Axes can be declared in any order, but they cannot duplicate. (For example, `x`, `xz`, `zyx`, or `yz`.)
 
@@ -101,7 +101,7 @@ _Syntax_
 
 _Arguments_
 
-`<anchor>`  String (either`eyes` or `feet`)
+`<anchor>` [String](../data-types.md#string) (either`eyes` or `feet`)
 
 Whether to anchor the executed command to eyes or feet.
 
@@ -119,7 +119,7 @@ _Syntax_
 
 _Arguments_
 
-`<targets>` Selector
+`<targets>` [Selector](../data-types.md#selector)
 
 Target entity/entities to become the new executor.
 
@@ -153,7 +153,7 @@ _Syntax_
 
 _Arguments_
 
-`<targets>`: Selector
+`<targets>` [Selector](../data-types.md#selector)
 
 Target entity/entities to match position, rotation, and dimension with.
 
@@ -196,19 +196,19 @@ _**Arguments**_
 
 Options: `facing <pos>`
 
-`<pos>` Position
+`<pos>` [Position](../data-types.md#position)
 
 Coordinates to rotate toward.
 
 Options: `facing entity <targets> [anchor]`
 
-`<targets>` Selector
+`<targets>` [Selector](../data-types.md#selector)
 
 The target(s) to rotate toward.
 
 Must be a player name or [target selector](../target-selectors.md).
 
-`[anchor]` String (either `eyes` or `feet`)
+`[anchor]` [String](../data-types.md#string) (either `eyes` or `feet`)
 
 Whether to face the target's _eyes_ or _feet_
 
@@ -251,13 +251,13 @@ _**Arguments**_
 
 Option: `positioned <pos>`
 
-`<pos>` Position
+`<pos>` [Position](../data-types.md#position)
 
 New position.
 
 Option: `positioned as <targets>`
 
-`<targets>` Selector
+`<targets>` [Selector](../data-types.md#selector)
 
 The target(s) to match position with.
 
@@ -293,13 +293,13 @@ _**Arguments**_
 
 Option: `rotated <rot>`
 
-`<rot>` Rotation
+`<rot>` [Rotation](../data-types.md#rotation)
 
 The rotation (yaw and optionally pitch), in degrees
 
 Option: `rotated as <targets>`
 
-`<targets>`: Selector
+`<targets>` [Selector](../data-types.md#selector)
 
 The target(s) to match rotation with.
 
@@ -333,12 +333,12 @@ _**Syntax**_
 
 _**Arguments**_
 
-`<command>` Long string\
+`<command>` [Long string](../data-types.md#long-string)
 Can be any [Better Command](./)
 
 _**Result**_
 
-Execute this command. Fails if <_command_> fails.
+Execute this command. Fails if <command> fails.
 
 ## Examples
 

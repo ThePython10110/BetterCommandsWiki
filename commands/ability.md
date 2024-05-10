@@ -6,23 +6,21 @@ description: Gets and sets player privileges.
 
 ## Syntax
 
-`ability <player> <ability> [value]`
-
-`ability <player> [ability]`
+`ability <player> [ability] [value]`
 
 ## Arguments
 
-`<player>` Selector
+`<player>` [Selector](../data-types.md#selector)
 
 Specifies the player for which to grant/revoke/query the privilege.
 
 Must be a player name or target selector.
 
-`<ability>` or \[`ability]` String
+`[ability]` [String](../data-types.md#string)
 
 Specifies the player privilege (such as `fly` or `server`).
 
-`[value]` Boolean
+`[value]` [Boolean](../data-types.md#boolean)
 
 Specifies the value to set the ability to, must be either `true` or `false`. If not specified, returns the current privilege's value.
 
@@ -30,7 +28,7 @@ Specifies the value to set the ability to, must be either `true` or `false`. If 
 
 Fails if the arguments are not specified correctly.
 
-On success, sets the player privilege into the specified privilege. If `value: Boolean` isn't specified, returns whether the player has the specified privilege. If `ability: Privilege` isn't specified, returns what privileges the player has.
+On success, sets the player privilege into the specified privilege. If `[value]` isn't specified, returns whether the player has the specified privilege. If `<ability>` isn't specified, returns what privileges the player has.
 
 ## History
 

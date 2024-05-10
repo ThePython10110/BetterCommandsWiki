@@ -12,7 +12,7 @@ description: >-
 
 ## Arguments
 
-`<command>` Long string
+`<command>` [Long string](../data-types.md#long-string)
 
 Specifies the command to run (such as `/give` or `give`) and its arguments
 

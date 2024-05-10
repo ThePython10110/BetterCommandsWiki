@@ -30,7 +30,7 @@ An enabled scoreboard objective with the "trigger" criterion.
 
 It must be a single word containing only alphanumeric characters and underscores.
 
-`<value>`: Number
+`<value>` [Number](../data-types.md#number)
 
 Specifies the value to be set to or added to the objective.
 

@@ -46,21 +46,21 @@ Sets the default number format to styled, which indicates that the score is disp
 
 ### Arguments
 
-`<objective>` String
+`<objective>` [String](../data-types.md#string)
 
 Specifies the internal objective name.
 
 Must be a single word, containing only alphanumeric characters and underscores.
 
-`<criterion>` String
+`<criterion>` [String](../data-types.md#string)
 
 Specifies the criterion of the new objective. Must be a valid scoreboard objective criterion.
 
-`<displayName>` Long string
+`<displayName>` [Long string](../data-types.md#long-string)
 
 Specifies the display name, defaulting to `<objective>` when unspecified
 
-`<slot>` String
+`<slot>` [String](../data-types.md#string)
 
 Specifies the slot to display the objective. Must be a scoreboard display slot. Valid slots are `sidebar` and `sidebar.<color>` where `<color>` is a valid team color.
 
@@ -72,7 +72,7 @@ Specifies the sort order.
 
 Specifies the text to show instead of a score.
 
-`<color>` String
+`<color>` [String](../data-types.md#string)
 
 Any valid [Minetest colorstring](https://api.minetest.net/colors) or team color.
 
@@ -142,29 +142,29 @@ Sets the number format of the targets' scores to fixed, which indicates that the
 
 ### Arguments
 
-`<target>` Selector or String
+`<target>` [Selector](../data-types.md#selector) or String
 
 Specifies the score holder.
 
 It must be either a target selector, a fake player name, or `*` for all score holders being tracked by the scoreboard system. Named players do not have to be online.
 
-`<targets>` Selector or String
+`<targets>` [Selector](../data-types.md#selector) or String
 
 Specifies the score holders.
 
 It must be either a target selector, a fake player name, or `*` for all score holders being tracked by the scoreboard system. Named players do not have to be online.
 
-`<objective>` String
+`<objective>` [String](../data-types.md#string)
 
 Specifies the internal objective name
 
 Must be a single word containing only alphanumeric characters and underscores.
 
-`<score>` Number
+`<score>` [Number](../data-types.md#number)
 
 Specifies the new score, or an amount to add/subtract from the score. Must be a number from -99,999,999,999,999 to 100,000,000,000,000.
 
-`[min]`/`[max]` Number or `*`
+`[min]`/`[max]` [Number](../data-types.md#number) or `*`
 
 Specifies the minimum and maximum value.
 
@@ -172,19 +172,19 @@ Must be a number from -99,999,999,999,999 to 100,000,000,000,000.
 
 If not specified, or `*`, default is minimum or maximum value, respectively.
 
-`<targetObjective>` String
+`<targetObjective>` [String](../data-types.md#string)
 
 Specifies the objective for targets.&#x20;
 
 Must be a single word containing only alphanumeric characters and underscores.
 
-`<source>` Selector or String
+`<source>` [Selector](../data-types.md#selector) or String
 
 Specifies the source score holders whose scores are used as source inputs.
 
 It must be either a target selector, a fake player name, or `*` for all score holders being tracked by the scoreboard system. Named players do not have to be online.
 
-`<operation>` String
+`<operation>` [String](../data-types.md#string)
 
 Specifies the operation to be applied.
 
@@ -202,15 +202,15 @@ Valid values:
 
 In all cases except `><`, source's score remains unchanged when performing the operation on a target. If target or source isn't tracked by the specified objective, it is set to 0. If more than one score holder is specified as sources, performs the operation once with each source's score. If more than one target score holder is specified, performs the operation for each target one by one.
 
-`[displayName]` Long string
+`[displayName]` [Long string](../data-types.md#long-string)
 
 Specifies the display name.
 
-`<contents>` Long string
+`<contents>` [Long string](../data-types.md#long-string)
 
 Specifies display text
 
-`<color>` String
+`<color>[String](../data-types.md#string)
 
 Any valid [Minetest colorstring](https://api.minetest.net/colors) or team color.
 

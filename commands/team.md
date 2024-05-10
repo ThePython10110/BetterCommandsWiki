@@ -36,17 +36,17 @@ Modifies the options of the specified team.
 
 ## Arguments
 
-`<team>` String
+`<team>` [String](../data-types.md#string)
 
 Specifies the name of a team.
 
 Must be a single word containing only alphanumeric characters and underscores.
 
-`[displayName]` Long string
+`[displayName]` [Long string](../data-types.md#long-string)
 
 Specifies the team name to be displayed.
 
-`[members]` Selector or String
+`[members]` [Selector](../data-types.md#selector) or String
 
 Specifies the entities to join or leave the team.
 
@@ -70,15 +70,15 @@ Specifies the value to set `<option>` to.
 Shown below are the values for each option.
 
 * For `displayName`:
-  * `<displayName>`: Long string - specifies the team name to be displayed.
+  * `<displayName>`: [Long string](../data-types.md#long-string) - specifies the team name to be displayed.
 * For `color`:
-  * `<color>`: String - Must be a valid team color.
+  * `<color>`: [String](../data-types.md#string) - Must be a valid team color.
 * For `friendlyFire`:
-  * `<allowed>`: Boolean
+  * `<allowed>`: [Boolean](../data-types.md#boolean)
     * `true` - (Default) Enables players inflicting damage on each other when in the same team.
     * `false` - Disable players inflicting damage on each other when in the same team.
 * For `nameFormat`:
-  * `<nameFormat>`: Long string - Any string, where any instance of `%s` is replaced with the player's name.
+  * `<nameFormat>`: [Long string](../data-types.md#long-string) - Any string, where any instance of `%s` is replaced with the player's name.
     * A player named ThePython on a team with the format `[ADMIN] %s the Great` would appear as `[ADMIN] ThePython the Great`.
 
 ## History
