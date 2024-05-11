@@ -62,7 +62,7 @@ Specifies the display name, defaulting to `<objective>` when unspecified
 
 `<slot>` [String](../data-types.md#string)
 
-Specifies the slot to display the objective. Must be a scoreboard display slot. Valid slots are `sidebar` and `sidebar.<color>` where `<color>` is a valid team color.
+Specifies the slot to display the objective. Must be a scoreboard display slot. Valid slots are `sidebar` and `sidebar.team.<color>` where `<color>` is a valid team color.
 
 `[ascending|descending]`
 
@@ -216,4 +216,4 @@ Any valid [Minetest colorstring](https://api.minetest.net/colors) or team color.
 
 ## History
 
-<table><thead><tr><th width="341">Version</th><th>Action</th></tr></thead><tbody><tr><td>v1.0</td><td>Added <code>/scoreboard</code></td></tr><tr><td>v2.0</td><td>Added <code>picked_up.&#x3C;item></code>, <code>mined.&#x3C;node></code>, <code>dug.&#x3C;node></code>, <code>placed.&#x3C;node></code>, and <code>crafted.&#x3C;item></code> scoreboard criteria, as well as the ability to change the sort direction.</td></tr></tbody></table>
+<table><thead><tr><th width="341">Version</th><th>Action</th></tr></thead><tbody><tr><td>v1.0</td><td>Added <code>/scoreboard</code></td></tr><tr><td>v2.0</td><td>Added <code>picked_up.&#x3C;item></code>, <code>mined.&#x3C;node></code>, <code>dug.&#x3C;node></code>, <code>placed.&#x3C;node></code>, and <code>crafted.&#x3C;item></code> scoreboard criteria, as well as the ability to change the sort direction.<br>Changed <code>sidebar.&#x3C;color></code> to <code>sidebar.team.&#x3C;color></code></td></tr></tbody></table>
