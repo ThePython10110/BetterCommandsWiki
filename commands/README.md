@@ -9,6 +9,7 @@ description: The complete list of Better Commands
 | `/? [<command>\|privs]`                                                                | Alias for the built-in `/help` command                                                                    |
 | [`/ability <player> <priv> [true\|false]`](ability.md)                                 | Gets and sets player privs                                                                                |
 | [`/bc <command>`](bc.md)                                                               | Runs any Better Command                                                                                   |
+| [`/clearspawnpoint [targets]`](clearspawnpoint.md)                                     | Clears players' respawn points                                                                            |
 | [`/execute align\|anchored\|as\|at\|facing\|positioned\|rotated\|run ...`](execute.md) | Runs a Better Command after changing the context)                                                         |
 | [`/gamemode <gamemode> [player]`](gamemode.md)                                         | Sets a player's gamemode                                                                                  |
 | [`/give <player> <item> [count] [wear]`](give.md)                                      | Gives items to players                                                                                    |
@@ -19,6 +20,7 @@ description: The complete list of Better Commands
 | [`/msg <target> <message>`](msg.md)                                                    | Sends a private message; can include target selectors if you have the `server` privilege                  |
 | [`/old <command>`](old.md)                                                             | Runs any command overridden by a Better Command                                                           |
 | [`/say <message>`](say.md)                                                             | Sends a message to all connected players; can include target selectors if you have the `server` privilege |
+| [`/spawnpoint [targets]`](spawnpoint.md)                                               | Sets players' respawn points                                                                              |
 | [`/summon <entity> [pos] [rot]`](summon.md)                                            | Summons an entity                                                                                         |
 | [`/scoreboard objectives\|players ...`](scoreboard.md)                                 | Manipulates the scoreboard                                                                                |
 | [`/setblock <pos> <node> [keep\|replace]`](setblock.md)                                | Places a node                                                                                             |

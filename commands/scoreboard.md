@@ -216,4 +216,4 @@ Any valid [Minetest colorstring](https://api.minetest.net/colors) or team color.
 
 ## History
 
-<table><thead><tr><th width="341">Version</th><th>Action</th></tr></thead><tbody><tr><td>v1.0</td><td>Added <code>/scoreboard</code></td></tr><tr><td>v2.0</td><td>Added <code>picked_up.&#x3C;itemstring></code>, <code>mined.&#x3C;itemstring></code>, <code>dug.&#x3C;itemstring></code>, <code>placed.&#x3C;itemstring></code>, and <code>crafted.&#x3C;itemstring></code> scoreboard criteria, as well as the ability to change the sort direction.</td></tr></tbody></table>
+<table><thead><tr><th width="341">Version</th><th>Action</th></tr></thead><tbody><tr><td>v1.0</td><td>Added <code>/scoreboard</code></td></tr><tr><td>v2.0</td><td>Added <code>picked_up.&#x3C;item></code>, <code>mined.&#x3C;node></code>, <code>dug.&#x3C;node></code>, <code>placed.&#x3C;node></code>, and <code>crafted.&#x3C;item></code> scoreboard criteria, as well as the ability to change the sort direction.</td></tr></tbody></table>
