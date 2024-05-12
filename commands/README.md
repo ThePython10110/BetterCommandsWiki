@@ -9,6 +9,7 @@ description: The complete list of Better Commands
 | `/? [<command>\|privs]`                                                                | Alias for the built-in `/help` command                                                                    |
 | [`/ability <player> <priv> [true\|false]`](ability.md)                                 | Gets and sets player privs                                                                                |
 | [`/bc <command>`](bc.md)                                                               | Runs any Better Command                                                                                   |
+| [`/clear [targets] [item] [maxCount]`](clear.md)                                       | Clears items from player inventory. Can also detect and query the amount of specified items.              |
 | [`/clearspawnpoint [targets]`](clearspawnpoint.md)                                     | Clears players' respawn points                                                                            |
 | [`/execute align\|anchored\|as\|at\|facing\|positioned\|rotated\|run ...`](execute.md) | Runs a Better Command after changing the context)                                                         |
 | [`/gamemode <gamemode> [player]`](gamemode.md)                                         | Sets a player's gamemode                                                                                  |

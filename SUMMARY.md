@@ -4,6 +4,7 @@
 * [Commands](commands/README.md)
   * [/ability](commands/ability.md)
   * [/bc](commands/bc.md)
+  * [/clear](commands/clear.md)
   * [/clearspawnpoint](commands/clearspawnpoint.md)
   * [/execute](commands/execute.md)
   * [/gamemode](commands/gamemode.md)
