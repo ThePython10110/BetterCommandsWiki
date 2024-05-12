@@ -26,6 +26,8 @@ Specifies the item to be cleared. If not specified, or if `*`, all items are cle
 
 If any metadata is included (including just `[]`, the item must match exactly; otherwise, only the names must match.
 
+Supports `group:groupname` syntax (but ignores metadata when using it).
+
 `[maxCount]` Number
 
 Specifies the maximum number of items to be cleared. If not specified, or if `-1`, all items that match `[item]` are cleared. If `0`, instead of clearing items, detects and queries the amount of specified items.
