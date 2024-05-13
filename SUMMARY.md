@@ -8,6 +8,7 @@
   * [/clearspawnpoint](commands/clearspawnpoint.md)
   * [/execute](commands/execute.md)
   * [/gamemode](commands/gamemode.md)
+  * [/gamerule](commands/gamerule.md)
   * [/give](commands/give.md)
   * [/kill](commands/kill.md)
   * [/me](commands/me.md)
