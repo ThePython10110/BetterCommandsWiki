@@ -19,6 +19,7 @@
   * [/setblock](commands/setblock.md)
   * [/spawnpoint](commands/spawnpoint.md)
   * [/team](commands/team.md)
+  * [/teammsg](commands/teammsg.md)
   * [/teleport](commands/teleport.md)
   * [/trigger](commands/trigger.md)
 * [Target Selectors](target-selectors.md)
