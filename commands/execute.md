@@ -4,7 +4,7 @@ description: Runs a Better Command after changing the context
 
 # /execute
 
-## Usage
+Usage
 
 There are currently eight instructions (aka. subcommands) for the `/execute` command. Multiple subcommands can be chained after `/execute`. Subcommands are divided into 2 categories: Modifier subcommands and `run` subcommand.
 
@@ -46,7 +46,6 @@ There are currently eight subcommands (eventually, there will be 12-13) for the 
 `/execute ...`
 
 * `... align <axes> -> execute`
-* `... anchored <anchor> -> execute`
 * `... as <targets> -> execute`
 * `... at <targets> -> execute`
 * `... facing (<pos>|entity <targets> [anchor]) -> execute`
@@ -79,31 +78,6 @@ _Result_
 Execution position in the given axes are floored, changing by less than 1 block. Causes an error if the argument is not specified correctly.
 
 Given (-1.8, 2.3, 5.9), `execute align xz` changes the position to (-2, 2.3, 5).Given (2.4, -1.1, 3.8), `execute align yxz run tp @p ~ ~ ~` teleports the nearest player to (2, -2, 3).
-
-</details>
-
-{% hint style="warning" %}
-The **`anchored`** subcommand currently does nothing (well, it sets the execution anchor, but the execution anchor doesn't do anything). This will eventually change.
-{% endhint %}
-
-<details>
-
-<summary><code>anchored</code></summary>
-
-**anchored**
-
-Sets the _execution anchor_ to the eyes or feet. Defaults to feet.\
-Running `positioned <pos> -> execute` resets to feet.
-
-_Syntax_
-
-`anchored <anchor> -> execute`
-
-_Arguments_
-
-`<anchor>` [String](../data-types.md#string) (either`eyes` or `feet`)
-
-Whether to anchor the executed command to eyes or feet.
 
 </details>
 
@@ -171,14 +145,9 @@ _Example_
 
 Move all sheep upward 1 block: `execute as @e[type=sheep] at @s run tp ~ ~1 ~`
 
-Kill the player running the command, because "`at`" does not change the executor: `execute at @e[type=sheep] run kill @s`\
-
+Kill the player running the command, because "`at`" does not change the executor: `execute at @e[type=sheep] run kill @s`\\
 
 </details>
-
-{% hint style="warning" %}
-Ignore any mention of the execution anchor. There is no `[anchor]` argument in the `facing` subcommand, although there will be eventually.
-{% endhint %}
 
 <details>
 
@@ -190,7 +159,7 @@ _**Syntax**_
 
 `facing <pos> -> execute`
 
-`facing entity <targets> [anchor] -> execute`
+`facing entity <targets> -> execute`
 
 _**Arguments**_
 
@@ -200,17 +169,13 @@ Options: `facing <pos>`
 
 Coordinates to rotate toward.
 
-Options: `facing entity <targets> [anchor]`
+Options: `facing entity <targets>`
 
 `<targets>` [Selector](../target-selectors.md)
 
 The target(s) to rotate toward.
 
 Must be a player name or [target selector](../target-selectors.md).
-
-`[anchor]` [String](../data-types.md#string) (either `eyes` or `feet`)
-
-Whether to face the target's _eyes_ or _feet_
 
 _**Result**_
 
@@ -230,8 +195,7 @@ All entities move one block in the direction of (0, 64, 0) (without changing the
 
 All entities move one block in the direction of (0, 64, 0) (with changing their rotation): `execute as @e at @s facing 0 64 0 run tp ^ ^ ^1 ~ ~`
 
-All non player entities move one space in the direction of their nearest player (without changing their rotation): `execute as @e[type=!player] at @s facing entity @p run tp @s ^ ^ ^1`\
-
+All non player entities move one space in the direction of their nearest player (without changing their rotation): `execute as @e[type=!player] at @s facing entity @p run tp @s ^ ^ ^1`\\
 
 </details>
 
@@ -319,8 +283,6 @@ _**Example**_
 
 Move every sheep 1 block in the direction that the player closest to it is facing: `execute as @e[type=sheep] at @s rotated as @p run tp @s ^ ^ ^1`
 
-
-
 </details>
 
 #### Run subcommand
@@ -333,16 +295,15 @@ _**Syntax**_
 
 _**Arguments**_
 
-`<command>` [Long string](../data-types.md#long-string)
-Can be any [Better Command](./)
+`<command>` [Long string](../data-types.md#long-string) Can be any [Better Command](./)
 
 _**Result**_
 
-Execute this command. Fails if <command> fails.
+Execute this command. Fails if fails.
 
 ## Examples
 
-Teleport all zombies five nodes in the direction of the nearest player.
+Teleport all zombies five nodes in the direct1ion of the nearest player.
 
 `execute as @e[type=zombie] at @s facing @p run tp ^ ^ ^5`
 
@@ -352,6 +313,7 @@ Make every entity say the name of the nearest other entity.
 
 ## History
 
-| Version | Action           |
-| ------- | ---------------- |
-| v1.0    | Added `/execute` |
+| Version | Action                        |
+| ------- | ----------------------------- |
+| v1.0    | Added `/execute`              |
+| v2.0    | Removed `anchored` subcommand |
