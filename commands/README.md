@@ -21,7 +21,7 @@ description: The complete list of Better Commands
 | [`/giveme`](give.md)                                                         | Alias for `/give @s`                                                                                             |
 | [`/kill [<targets>]`](kill.md)                                               | Kills entities (or self if `<targets>` left out)                                                                 |
 | [`/killme`](kill.md)                                                         | Alias for`/kill @s`                                                                                              |
-| [`/me <action>`](me.md)                                                      | Sends a message about yourself; can target  selectors if you have the `server` privilege                         |
+| [`/me <action>`](me.md)                                                      | Sends a message about yourself; can include target  selectors if you have the `server` privilege                 |
 | [`/msg <targets> <message>`](msg.md)                                         | Sends a private message; can include target selectors if you have the `server` privilege                         |
 | [`/old <command>`](old.md)                                                   | Runs any command overridden by a Better Command                                                                  |
 | [`/remove [<targets>]`](remove.md)                                           | Removes entities (or self if `<entity>` left out                                                                 |
