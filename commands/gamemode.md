@@ -6,7 +6,7 @@ description: Sets a player's game mode.
 
 ## Syntax
 
-`gamemode <gamemode> [<target>]`
+`gamemode <gamemode> [<targets>]`
 
 ## Arguments
 

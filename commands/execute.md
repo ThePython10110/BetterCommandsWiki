@@ -6,7 +6,7 @@ description: Runs a Better Command after changing the context
 
 Usage
 
-There are currently eight instructions (aka. subcommands) for the `/execute` command. Multiple subcommands can be chained after `/execute`. Subcommands are divided into 2 categories: Modifier subcommands and `run` subcommand.
+There are currently seven instructions (aka. subcommands) for the `/execute` command. Multiple subcommands can be chained after `/execute`. Subcommands are divided into 2 categories: Modifier subcommands and `run` subcommand.
 
 * Modifier subcommands modify execution context variables to change the context the command is executed. Subcommands following it execute with specific executor(s), execution position(s), execution dimension(s), execution rotation(s) and execution anchor.
 * `run` subcommand is used for carrying out another command.
