@@ -14,7 +14,7 @@ If there is not enough room in the player's inventory, gives the specified item(
 
 ## Syntax
 
-`give <target> <item>`
+`give <targets> <item>`
 
 `giveme <item>` (equivalent to `/give @s <item>`)
 

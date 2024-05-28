@@ -138,7 +138,7 @@ See [Target Selectors](target-selectors.md).
 
 An itemstring or item alias, with optional metadata in `[square brackets]`. Nodes support param1 and param2 being set this way.
 
-Items can also be specified with a `count` and `wear` value.
+Items can also be specified with a `count` and `wear` value, such as `default:pick_wood 1 65535`
 
 #### Item Examples
 

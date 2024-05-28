@@ -16,6 +16,7 @@
   * [/me](commands/me.md)
   * [/msg](commands/msg.md)
   * [/old](commands/old.md)
+  * [/playsound](commands/playsound.md)
   * [/remove](commands/remove.md)
   * [/say](commands/say.md)
   * [/scoreboard](commands/scoreboard.md)
