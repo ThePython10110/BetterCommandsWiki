@@ -12,15 +12,15 @@ description: Manages and displays scores for various scoreboard objectives.
 
 Lists all existing objectives with their display names and criteria
 
-`scoreboard objectives add <objective> <criterion> [displayName]`
+`scoreboard objectives add <objective> <criterion> [<displayName>]`
 
-Creates a new objective with the givven internal objective name, specified criterion, and the optional display name.
+Creates a new objective with the given internal objective name, specified criterion, and the optional display name (display name defaults to internal name if unspecified).
 
 `scoreboard objectives remove <objective>`
 
 Deletes the named objective from the scoreboard system. Data is deleted from the objectives list, and if it was on a display list it is no longer displayed.
 
-`scoreboard objectives setdisplay <slot> [objective] [ascending|descending]`
+`scoreboard objectives setdisplay <slot> [<objective>] [ascending|descending]`
 
 Displays score info for the objective in the given slot. Note that the objective parameter is optional; if no objective is provided, this display slot is cleared (returned to its default state). If slot is `sidebar`, there is an additional optional argument `ascending|descending` to specify the sort order (added in v2.0).
 
@@ -80,9 +80,9 @@ Any valid [Minetest colorstring](https://api.minetest.net/colors) or team color.
 
 ### Syntax
 
-`scoreboard players list [targets]`
+`scoreboard players list [<targets>]`
 
-Lists all score holders that are tracked in some way by the scoreboard system. The optional `[targets]` parameter is used to list the scores of particular score holders.
+Lists all score holders that are tracked in some way by the scoreboard system. The optional `[<targets>]` parameter is used to list the scores of particular score holders.
 
 `scoreboard players get <target> <objective>`
 
@@ -100,7 +100,7 @@ Increments the targets' scores in that objective by the given amount. A negative
 
 Decrements the targets' scores in that objective by the given amount. A negative number adds to the score.
 
-`scoreboard players reset <targets> [objective]`
+`scoreboard players reset <targets> [<objective>]`
 
 Deletes score or all scores for the targets. If `[objective]` is specified, then only that objective is cleared. Otherwise, this applies to all objectives.
 
@@ -108,9 +108,9 @@ Note that this does not merely set the scores to 0: it removes the targets from 
 
 This also disables the target players' ability to use `/trigger` command (on the given objective if specified).
 
-`scoreboard players test <player> <objective> [min] [max]`
+`scoreboard players test <player> <objective> [<min>] [<max>]`
 
-Test if scores are between min and max (`[min]` and `[max]` default to -99,999,999,999,999 and 100,000,000,000,000 if not specified or `*`).
+Test if scores are between min and max (`[<min>]` and `[<max>]` default to -99,999,999,999,999 and 100,000,000,000,000 if not specified or `*`).
 
 `scoreboard players enable <targets> <objective>`
 
@@ -124,9 +124,9 @@ Note that if any of the targets did not previously have a score for that scorebo
 
 Applies an arithmetic operation altering the targets' scores in the target objective, using sources' scores in the source objective as input.
 
-`scoreboard players display name <targets> <objective> [displayName]`
+`scoreboard players display name <targets> <objective> [<displayName>]`
 
-Changes the display name of the targets' scores (if `[displayName]` is not specified, display name is reset).
+Changes the display name of the targets' scores (if `<displayName>` is not specified, display name is reset).
 
 `scoreboard players display numberformat <targets> <objective> blank`
 
@@ -164,7 +164,7 @@ Must be a single word containing only alphanumeric characters and underscores.
 
 Specifies the new score, or an amount to add/subtract from the score. Must be a number from -99,999,999,999,999 to 100,000,000,000,000.
 
-`[min]`/`[max]` [Number](../data-types.md#number) or `*`
+`<min>`/`<max>` [Number](../data-types.md#number) or `*`
 
 Specifies the minimum and maximum value.
 
@@ -178,7 +178,7 @@ Specifies the objective for targets.
 
 Must be a single word containing only alphanumeric characters and underscores.
 
-`<source>` [Selector](../target-selectors.md) or (../data-types.md#string)
+`<source>` [Selector](../target-selectors.md) or \[String]\(../data-types.md#string)
 
 Specifies the source score holders whose scores are used as source inputs.
 
@@ -202,7 +202,7 @@ Valid values:
 
 In all cases except `><`, source's score remains unchanged when performing the operation on a target. If target or source isn't tracked by the specified objective, it is set to 0. If more than one score holder is specified as sources, performs the operation once with each source's score. If more than one target score holder is specified, performs the operation for each target one by one.
 
-`[displayName]` [Long string](../data-types.md#long-string)
+`<displayName>` [Long string](../data-types.md#long-string)
 
 Specifies the display name.
 

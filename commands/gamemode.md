@@ -6,7 +6,7 @@ description: Sets a player's game mode.
 
 ## Syntax
 
-`gamemode <gamemode> [target]`
+`gamemode <gamemode> [<target>]`
 
 ## Arguments
 
@@ -19,7 +19,7 @@ Must be one of the following:
 * `survival` (can be abbreviated as `s` or `0`)
 * `creative` (can be abbreviated as `c` or `1`)
 
-`[target]` [Selector](../target-selectors.md)
+`<target>` [Selector](../target-selectors.md)
 
 Specifies the target(s). If not specified, defaults to the player who executes the command.
 

@@ -10,13 +10,13 @@ Kills entities. If, for some reason, entities do not die when attempting to kill
 
 ## Syntax
 
-`kill [targets]`
+`kill [<targets>]`
 
 `killme` (equivalent to `kill @s`)
 
 ## Arguments
 
-`[targets]` [Selector](../target-selectors.md)
+`<targets>` [Selector](../target-selectors.md)
 
 Specifies the target(s) to kill. If not specified, defaults to the player who executed the command.
 

@@ -48,7 +48,7 @@ There are currently eight subcommands (eventually, there will be 12-13) for the 
 * `... align <axes> -> execute`
 * `... as <targets> -> execute`
 * `... at <targets> -> execute`
-* `... facing (<pos>|entity <targets> [anchor]) -> execute`
+* `... facing (<pos>|entity <targets>) -> execute`
 * `... positioned (<pos>|as <targets>) -> execute`
 * `... rotated (<rot>|as <targets>) -> execute`
 * `... run <command>`
@@ -295,11 +295,13 @@ _**Syntax**_
 
 _**Arguments**_
 
-`<command>` [Long string](../data-types.md#long-string) Can be any [Better Command](./)
+`<command>` [Long string](../data-types.md#long-string)
+
+Can be any [Better Command](./)
 
 _**Result**_
 
-Execute this command. Fails if fails.
+Execute the specified command. Fails if the command fails.
 
 ## Examples
 

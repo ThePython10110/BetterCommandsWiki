@@ -10,11 +10,11 @@ Removes entities (like [`/kill`](kill.md), but doesn't call death callbacks). If
 
 ## Syntax
 
-`remove [targets]`
+`remove [<targets>]`
 
 ## Arguments
 
-`[targets]` [Selector](../target-selectors.md)
+`<targets>` [Selector](../target-selectors.md)
 
 Specifies the target(s) to remove. If not specified, defaults to the player who executed the command.
 

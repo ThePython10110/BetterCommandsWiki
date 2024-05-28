@@ -6,11 +6,11 @@ description: Sets players' respawn points
 
 ## Syntax
 
-`/spawnpoint [targets]`
+`/spawnpoint [<targets>]`
 
 ## Arguments
 
-`[targets]` [Selector](../data-types.md#selector)
+`<targets>` [Selector](../data-types.md#selector)
 
 The player(s) to set the spawnpoint for. If omitted, defaults to the executor.
 

@@ -6,11 +6,11 @@ description: Controls teams.
 
 ## Syntax
 
-`team list [team]`
+`team list [<team>]`
 
 Lists all teams, with their display names and the amount of entities in them. The optional `[team]` can be used to specify a particular team.
 
-`team add <team> [displayName]`
+`team add <team> [<displayName>]`
 
 Creates a team with the given name and optional display name. `[displayName]` defaults to `<team>` when unspecified.
 
@@ -22,11 +22,11 @@ Deletes the specified team.
 
 Removes all members from the named team.
 
-`team join <team> [members]`
+`team join <team> [<members>]`
 
 Assigns the specified entities to the specified team. If no entities are specified, makes the executor join the team.
 
-`team leave [members]`
+`team leave [<members>]`
 
 Makes the specified entities leave their teams. If no entities are specified, makes the executor leave their team.
 
@@ -42,11 +42,11 @@ Specifies the name of a team.
 
 Must be a single word containing only alphanumeric characters and underscores.
 
-`[displayName]` [Long string](../data-types.md#long-string)
+`<displayName>` [Long string](../data-types.md#long-string)
 
 Specifies the team name to be displayed.
 
-`[members]` [Selector](../target-selectors.md) or (../data-types.md#string)
+`<members>` [Selector](../target-selectors.md) or (../data-types.md#string)
 
 Specifies the entities to join or leave the team.
 

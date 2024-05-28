@@ -6,11 +6,11 @@ description: Clears respawn points set with /spawnpoint
 
 ## Syntax
 
-`/clearspawnpoint [targets]`
+`/clearspawnpoint [<targets>]`
 
 ## Arguments
 
-`[targets]` [Selector](../data-types.md#selector)
+`<targets>` [Selector](../data-types.md#selector)
 
 The player(s) to clear the spawnpoint for. If omitted, defaults to the executor.
 

@@ -6,9 +6,9 @@ description: Summons an entity.
 
 ## Syntax
 
-`summon <entity> [pos] [rot]`
+`summon <entity> [<pos>] [<rot>]`
 
-`summon <entity> [pos] [facing <target>]`
+`summon <entity> [<pos>] [facing <target>]`
 
 ## Arguments
 
@@ -16,11 +16,11 @@ description: Summons an entity.
 
 Specifies the entity to be summoned. You can include the entity's staticdata in \[square brackets]. If an entity alias is used, and the alias matches multiple different entities, chooses a random one.
 
-`[pos]` [Position](../data-types.md#position)
+`<pos>` [Position](../data-types.md#position)
 
 Specifies the position to summon the entity. If not specified, defaults to the position of the command's execution.
 
-`[rot]` [Rotation](../data-types.md#rotation)
+`<rot>` [Rotation](../data-types.md#rotation)
 
 Specifies the rotation (yaw and optionally pitch) of the summoned entity. If not specified, defaults to the rotation of the command's executor.
 

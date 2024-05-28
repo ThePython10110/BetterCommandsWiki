@@ -8,7 +8,7 @@ description: >-
 
 ## Syntax
 
-`forceenchant <targets> <enchantment> [level]`
+`forceenchant <targets> <enchantment> [<level>]`
 
 ## Arguments
 
@@ -20,7 +20,7 @@ Specifies the target(s).
 
 Specifies the enchantment to be added to the item held in the target's main hand.
 
-`[level]` Number
+`<level>` Number
 
 Specifies the enchantment level. If not specified, defaults to 1.
 

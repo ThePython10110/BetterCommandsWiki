@@ -8,7 +8,7 @@ description: >-
 
 ## Syntax
 
-`enchant <targets> <enchantment> [level]`
+`enchant <targets> <enchantment> [<level>]`
 
 ## Arguments
 
@@ -20,7 +20,7 @@ Specifies the target(s).
 
 Specifies the enchantment to be added to the item held in the target's main hand.
 
-`[level]` Number
+`<level>` Number
 
 Specifies the enchantment level. Should not be greater than the maximum level for the specified enchantment. If not specified, defaults to 1.
 

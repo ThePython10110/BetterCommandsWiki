@@ -6,7 +6,7 @@ description: 'Sets or queries a setting (aliases: /changesetting)'
 
 ## Syntax
 
-`gamerule <setting> [value]`
+`gamerule <setting> [<value>]`
 
 ## Arguments
 
@@ -14,7 +14,7 @@ description: 'Sets or queries a setting (aliases: /changesetting)'
 
 Specifies the setting to set or query.
 
-`[value]`
+`<value>`
 
 Specifies the value to set the setting to. If not specified, queries the value of the setting instead of setting it.
 

@@ -12,15 +12,15 @@ Can remove items in the inventory lists specified by the "Clear Lists" setting. 
 
 ## Syntax
 
-`clear [targets] [item] [maxCount]`
+`clear [<targets>] [<item>] [<maxCount>]`
 
 ## Arguments
 
-`[targets]` Selector
+`<targets>` Selector
 
 Specifies the player(s) whose items are cleared. If not specified, defaults to the player who executes the command.
 
-`[item]` Item
+`<item>` Item
 
 Specifies the item to be cleared. If not specified, or if `*`, all items are cleared.
 
@@ -28,7 +28,7 @@ If any metadata is included (including just `[]`, the item must match exactly; o
 
 Supports `group:groupname` syntax (but ignores metadata when using it).
 
-`[maxCount]` Number
+`<maxCount>` Number
 
 Specifies the maximum number of items to be cleared. If not specified, or if `-1`, all items that match `[item]` are cleared. If `0`, instead of clearing items, detects and queries the amount of specified items.
 
