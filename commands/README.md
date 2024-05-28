@@ -14,7 +14,7 @@ description: The complete list of Better Commands
 | [`/clearspawnpoint [targets]`](clearspawnpoint.md)                                     | Clears players' respawn points                                                                                   |
 | [`/enchant <targets> <enchantment> [level]`](enchant.md)                               | Adds an enchantment to a player's selected item, subject to the same restrictions as an anvil (MCL only).        |
 | [`/execute align\|anchored\|as\|at\|facing\|positioned\|rotated\|run ...`](execute.md) | Runs a Better Command after changing the context)                                                                |
-| `/forceenchant <targets> <enchantment> [level]`                                        | Adds an enchantment to a player's selected item, regardless of whether it would normally be possible (MCL only). |
+| [`/forceenchant <targets> <enchantment> [level]`](forceenchant.md)                     | Adds an enchantment to a player's selected item, regardless of whether it would normally be possible (MCL only). |
 | [`/gamemode <gamemode> [player]`](gamemode.md)                                         | Sets a player's gamemode                                                                                         |
 | [`/gamerule <setting> [value]`](gamerule.md)                                           | Sets or queries a setting                                                                                        |
 | [`/give <player> <item> [count] [wear]`](give.md)                                      | Gives items to players                                                                                           |
