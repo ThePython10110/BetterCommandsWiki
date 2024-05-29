@@ -64,3 +64,7 @@ These commands do not affect the day count, unlike in ACOVG. Running `/time add 
 ## Examples
 
 * To set the time to 1,000: `time set 1000`
+
+| Version | Action        |
+| ------- | ------------- |
+| v1.0    | Added `/time` |

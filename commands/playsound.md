@@ -41,3 +41,9 @@ The maximum distance from `<pos>` or `<targets>` at which the sound can still be
 To play the sound of TNT igniting 3 nodes behind the nearest player:
 
 `/execute as @p at @s run playsound tnt_ignite ^ ^ ^-3`
+
+## History
+
+| Version | Action             |
+| ------- | ------------------ |
+| v1.0    | Added `/playsound` |

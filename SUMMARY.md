@@ -6,6 +6,7 @@
   * [/bc](commands/bc.md)
   * [/clear](commands/clear.md)
   * [/clearspawnpoint](commands/clearspawnpoint.md)
+  * [/damage](commands/damage.md)
   * [/enchant](commands/enchant.md)
   * [/execute](commands/execute.md)
   * [/forceenchant](commands/forceenchant.md)

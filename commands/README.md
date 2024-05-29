@@ -12,6 +12,7 @@ description: The complete list of Better Commands
 | [`/clear [<targets>] [<item>] [<maxCount>]`](clear.md)                                       | Clears items from player inventory. Can also detect and query the amount of specified items.                     |
 | [`/changesetting`](gamerule.md)                                                              | Alias for `/gamerule`                                                                                            |
 | [`/clearspawnpoint [<targets>]`](clearspawnpoint.md)                                         | Clears respawn points set with /spawnpoint                                                                       |
+| [`/damage <targets> <amount> [<damageType] [by <entity>]`](damage.md)                        | Applies a set amount of damage to the specified entities.                                                        |
 | [`/enchant <targets> <enchantment> [<level>]`](enchant.md)                                   | Adds an enchantment to a player's selected item, subject to the same restrictions as an anvil (MCL only).        |
 | [`/execute align\|as\|at\|facing\|positioned\|rotated\|run ...`](execute.md)                 | Runs a Better Command after changing the context)                                                                |
 | [`/forceenchant <targets> <enchantment> [<level>]`](forceenchant.md)                         | Adds an enchantment to a player's selected item, regardless of whether it would normally be possible (MCL only). |
