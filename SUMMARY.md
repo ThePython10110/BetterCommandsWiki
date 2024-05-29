@@ -26,6 +26,7 @@
   * [/team](commands/team.md)
   * [/teammsg](commands/teammsg.md)
   * [/teleport](commands/teleport.md)
+  * [/time](commands/time.md)
   * [/trigger](commands/trigger.md)
 * [Target Selectors](target-selectors.md)
 * [Data types](data-types.md)

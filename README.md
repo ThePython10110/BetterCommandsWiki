@@ -9,5 +9,5 @@ Welcome to the Better Commands wiki! This wiki currently includes v2.0 features 
 A lot of this is basically copied from ACOVG's wiki, since it's basically the same information.
 
 {% hint style="info" %}
-ACOVG ("a certain other voxel game") is used in place of the game from which I'm copying the commands.
+ACOVG ("A Certain Other Voxel Game") is used in place of the game from which I'm copying the commands, because that's how I decided to do it.
 {% endhint %}
