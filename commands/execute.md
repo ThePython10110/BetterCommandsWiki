@@ -145,7 +145,7 @@ _Example_
 
 Move all sheep upward 1 block: `execute as @e[type=sheep] at @s run tp ~ ~1 ~`
 
-Kill the player running the command, because "`at`" does not change the executor: `execute at @e[type=sheep] run kill @s`\\
+Kill the player running the command, because "`at`" does not change the executor: `execute at @e[type=sheep] run kill @s`
 
 </details>
 
