@@ -6,6 +6,10 @@ description: >-
 
 # /forceenchant
 
+## Usage
+
+Can only be used to enchant items that can normally be enchanted (like tools and armor), but can apply any level of any enchantment. To enchant items under the game's normal restrictions, use [enchant.md](enchant.md "mention").
+
 ## Syntax
 
 `forceenchant <targets> <enchantment> [<level>]`
@@ -34,8 +38,6 @@ Must be a positive integer.
 *   To enchant the nearest player's held item with Knockback 99:
 
     `/forceenchant @p knockback 99` (just put it on a pair of boots or something... knockboots)
-
-To enchant items under the game's normal restrictions, use [enchant.md](enchant.md "mention").
 
 ## History
 

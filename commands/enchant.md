@@ -6,6 +6,10 @@ description: >-
 
 # /enchant
 
+## Usage
+
+Can only be used to enchant items that can normally be enchanted (like tools and armor), and can only apply enchantments that can be obtained via normal enchanting. To override the game's normal enchantment restrictions, use [forceenchant.md](forceenchant.md "mention").
+
 ## Syntax
 
 `enchant <targets> <enchantment> [<level>]`
@@ -34,8 +38,6 @@ Must be a positive integer.
 *   To enchant the nearest player's held sword with Sharpness 5:
 
     `/enchant @p sharpness 5`
-
-To override the game's normal restrictions, use [forceenchant.md](forceenchant.md "mention").
 
 ## History
 
