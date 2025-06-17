@@ -27,6 +27,7 @@ description: The complete list of Better Commands
 | [`/old <command>`](old.md)                                                                   | Runs any command overridden by a Better Command                                                                  |
 | [`/playsound <sound> (<targets>\|<pos>) [<volume>] [<pitch>] [<maxDistance>]`](playsound.md) | Plays a sound                                                                                                    |
 | [`/remove [<targets>]`](remove.md)                                                           | Removes entities (or self if `<entity>` left out)                                                                |
+| [`/ride <target> <action> <vehicle>`](ride.md)                                               | Attaches entities to other entities.                                                                             |
 | [`/say <message>`](say.md)                                                                   | Sends a message to all connected players; can include target selectors if you have the `server` privilege        |
 | [`/scoreboard objectives\|players ...`](scoreboard.md)                                       | Manipulates the scoreboard                                                                                       |
 | [`/setblock <pos> <node> [keep\|replace]`](setblock.md)                                      | Places a node                                                                                                    |
@@ -37,10 +38,11 @@ description: The complete list of Better Commands
 | [`/teammsg <message>`](teammsg.md)                                                           | Sends a message to the executor's team                                                                           |
 | [`/teleport ...`](teleport.md)                                                               | Sets entities' position and rotation (too many argument combinations).                                           |
 | [`/tell`](msg.md)                                                                            | Alias for `/msg`                                                                                                 |
-| [/tm](teammsg.md)                                                                            | Alias for `/teammsg`                                                                                             |
+| [`/tm`](teammsg.md)                                                                          | Alias for `/teammsg`                                                                                             |
 | [`/trigger <objective> [add\|set <value>]`](trigger.md)                                      | Allows players to set their own scores in controlled ways.                                                       |
 | [`/tp`](teleport.md)                                                                         | Alias for `/teleport`                                                                                            |
 | [`/w`](msg.md)                                                                               | Alias for `/msg`                                                                                                 |
+| [`/weather <weather> [<duration>]`](weather.md)                                              | Sets or queries the weather.                                                                                     |
 
 ## History
 

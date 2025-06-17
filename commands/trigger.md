@@ -6,13 +6,13 @@ description: >-
 
 # /trigger
 
-Changes the executor player's score in a scoreboard objective with a "trigger" criterion, and un-enabled the objective for this player. Allows non-operator players to modify their own scoreboard objectives under tightly controlled conditions. Often used to let players activate systems controlled by data packs or command blocks.
+Changes the executor player's score in a scoreboard objective with a "trigger" criterion, and un-`enable`s the objective for this player. Allows non-operator players to modify their own scoreboard objectives under tightly controlled conditions. Often used to let players activate systems controlled by data packs or command blocks.
 
 ## Syntax
 
 `trigger <objective>`
 
-Adds `1` to the current value of `<objective>`.
+Adds `1` to the current value of `<objective>`. If the executor has no score in that objective, sets it to 0 instead.
 
 `trigger <objective> add <value>`
 

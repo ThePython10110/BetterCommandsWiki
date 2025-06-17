@@ -54,7 +54,7 @@ It must be either a target selector, a fake player name, or `*` for all score ho
 
 `<option>`
 
-A specific option to change.
+A specific option to change.mo
 
 Value must be one of the following:
 

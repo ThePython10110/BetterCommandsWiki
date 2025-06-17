@@ -108,13 +108,13 @@ Note that this does not merely set the scores to 0: it removes the targets from 
 
 This also disables the target players' ability to use `/trigger` command (on the given objective if specified).
 
-`scoreboard players test <player> <objective> [<min>] [<max>]`
+`scoreboard players test <player> <objective> <min> <max>`
 
-Test if scores are between min and max (`[<min>]` and `[<max>]` default to -99,999,999,999,999 and 100,000,000,000,000 if not specified or `*`).
+Test if scores are between min and max (setting either`<min>` and `<max>` to `*` will set them to -99,999,999,999,999 or 100,000,000,000,000, respectively).
 
 `scoreboard players enable <targets> <objective>`
 
-Enables the target(s) to use the `/trigger` command on the specified objective. This command accepts non-player entities, but only players are able to actually use the `/trigger` command. Until this command has been run, players can't trigger that objective.
+Enables the target(s) to use the `/trigger` command on the specified objective. This command accepts non-player entities, but only players are able to actually use the `/trigger` command. Until this command has been run, players can't trigger that objective. The objective must have a "trigger" criterion.
 
 Using the `/trigger` command disables it again.
 
