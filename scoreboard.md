@@ -9,13 +9,13 @@ description: >-
 
 ## Objectives
 
-Entities can hold scores in the scoreboard specified by objective. Objectives track a number of points for entities while meeting a single criteria. Objective scores are stored as integers with the range of -99,999,999,999,999 to 100,000,000,000,000.
+Entities can hold scores in the scoreboard specified by objective. Objectives track a number of points for entities while meeting a single criteria. Objective scores are stored as integers with the range of -99,999,999,999,999 to 100,000,000,000,000 (-100 trillion + 1 to 100 trillion)
 
 Objectives have two main properties: a name and a criterion. The objective's name is used internally for referencing in commands and selector arguments. And the criterion determines its behavior — primarily what to track.
 
 Objective names must be single words containing only alphanumeric characters and underscores.
 
-The entity's score in any objective can be changed from commands. It can be increased by, decreased by, or set to a given amount with commands.  Currently, only players are supported, and not other entities.
+The entity's score in any objective can be changed from commands. It can be increased by, decreased by, or set to a given amount with commands.  Currently, only players are supported, and not other entities. However, "fake players" can also be used.
 
 Objectives also have other properties to customize their appearance and behavior:
 

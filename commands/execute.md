@@ -6,10 +6,10 @@ description: Runs a Better Command after changing the context
 
 Usage
 
-There are currently seven instructions (aka. subcommands) for the `/execute` command. Multiple subcommands can be chained after `/execute`. Subcommands are divided into 2 categories: Modifier subcommands and `run` subcommand.
+There are currently seven instructions (aka. subcommands) for the `/execute` command. Multiple subcommands can be chained after `/execute`. Subcommands are divided into 2 categories: Modifier subcommands and rhe `run` subcommand.
 
 * Modifier subcommands modify execution context variables to change the context the command is executed. Subcommands following it execute with specific executor(s), execution position(s), execution dimension(s), execution rotation(s) and execution anchor.
-* `run` subcommand is used for carrying out another command.
+* The `run` subcommand is used for carrying out another command.
 
 All needed subcommands can be concatenated together. Subcommands other than the `run` subcommand can be arranged arbitrarily and used multiple times. But the `run` subcommand can be used only once and must be put at the end of the subcommands chain. A `run` subcommand or a condition subcommand finalizes the chain, otherwise the command is unparseable.
 
@@ -25,13 +25,13 @@ A branch may terminate halfway and does nothing (does not execute `run` subcomma
 
 Note that `... run execute ...` has no effect at all. For example, the following commands work the same:
 
-`execute as @e[type=pig] as @e[type=pig] run summon pig`
+`execute as @e[type=pig] at @e[type=pig] run summon pig`
 
-`execute as @e[type=pig] run execute as @e[type=pig] run execute run /execute run summon pig`
+`execute as @e[type=pig] run execute at @e[type=pig] run execute run /execute run summon pig`
 
 Better Commands' version of `/execute` acts like the non-coffee-flavored version of ACOVG in that it processes subcommands depth-first. This means that after forking, all the following subcommands are considered as a whole and are executed once for each branch.
 
-There is no way to achieve breadth-first execution.
+There is no way to achieve breadth-first execution, just because it's harder to do without completely rewriting large parts of my code.
 
 ## Output values
 
