@@ -35,6 +35,8 @@ Must be a positive integer.
 
     `/forceenchant @p knockback 99` (just put it on a pair of boots or something... knockboots)
 
+To enchant items under the game's normal restrictions, use [enchant.md](enchant.md "mention").
+
 ## History
 
 | Version | Action                |
