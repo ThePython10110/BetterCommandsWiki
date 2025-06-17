@@ -22,7 +22,7 @@ Specifies the enchantment to be added to the item held in the target's main hand
 
 `<level>` Number
 
-Specifies the enchantment level. Should not be greater than the maximum level for the specified enchantment. If not specified, defaults to 1.
+Specifies the enchantment level. Must not be greater than the maximum level for the specified enchantment. If not specified, defaults to 1.
 
 Must be a positive integer.
 
@@ -34,6 +34,8 @@ Must be a positive integer.
 *   To enchant the nearest player's held sword with Sharpness 5:
 
     `/enchant @p sharpness 5`
+
+To override the game's normal restrictions, use [forceenchant.md](forceenchant.md "mention").
 
 ## History
 
