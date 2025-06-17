@@ -31,3 +31,9 @@ Must be a number with an optional unit suffix. Units include:
 * `t` (default and omittable): a single tick, the default unit.
 
 (Note: "ticks" don't really apply to Minetest, they're just defined here as 1/24000 of a day).
+
+## History
+
+| Version | Action           |
+| ------- | ---------------- |
+| v3.0    | Added `/weather` |

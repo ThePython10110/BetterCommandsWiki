@@ -43,3 +43,9 @@ The bone of the vehicle to attach the target to. Use `_` to select the default.
 `[<pos>]`: The position (relative to the bone) to mount the target.
 
 `[<rot>]`: The rotation (relative to the bone) to mount the target.
+
+## History
+
+| Version | Action        |
+| ------- | ------------- |
+| v3.0    | Added `/ride` |
