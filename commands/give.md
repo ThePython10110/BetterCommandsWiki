@@ -8,9 +8,7 @@ description: Gives items to one or more players
 
 Gives the specified item(s) to the target(s). If `<targets>` or `player: target` resolves to multiple targets, each receives the specified number of items.
 
-If there is enough room in the player's inventory, gives the specified item(s).
-
-If there is not enough room in the player's inventory, gives the specified item(s) until the inventory is full, and summons the rest items as a item entity at the player's position.
+This command gives all items in a single stack, exceeding normal stack limits if necessary. The maximum number of items that can be given is 65535.
 
 ## Syntax
 
