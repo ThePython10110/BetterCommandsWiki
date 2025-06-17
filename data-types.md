@@ -18,7 +18,7 @@ Any single word (whitespace at the beginning and end is ignored)
 
 ## Long string
 
-Any text (whitespace at the beginnning and end is ignored). Long strings are _always_ the last argument in a command.
+Any text (whitespace at the beginning and end is ignored). Long strings are _always_ the last argument in a command.
 
 #### Examples:
 
@@ -26,11 +26,11 @@ Any text (whitespace at the beginnning and end is ignored). Long strings are _al
 
 `another example`
 
-`12983 plus eighty-nine =     thirteen thousand and 72`
+`12983 + eighty-nine =     thirteen thousand and 72.000000`
 
 ## Number
 
-Any positive or negative number from -99,999,999,999,999 (negative 100 trillion + 1**)** to 100,000,000,000,000. (100 trillion)
+Any positive or negative number from -99,999,999,999,999 (negative 100 trillion + &#x31;**)** to 100,000,000,000,000. (100 trillion)
 
 #### Examples:
 
