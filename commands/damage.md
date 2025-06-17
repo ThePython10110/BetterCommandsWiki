@@ -29,7 +29,7 @@ Must be a positive number. Value is floored to the nearest integer, since Minete
 
 `<damageType>` String
 
-A valid Minetest damage type, such as `punch` or `fall` (defaults to `set_hp`). Only applies to players.
+Currently unused.
 
 `<entity>` Selector
 
@@ -39,7 +39,9 @@ Should only select a single entity.
 
 ## Example
 
-* Make a villager named `villager_1` deal 1 damage to the nearest iron golem:`/damage @e[type=iron_golem, sort=nearest, limit=1] 1 punch by @e[type=villager, limit=1, name="villager_1"]`
+* Make a villager named `villager_1` deal 1 damage to the nearest iron golem:
+
+`/damage @n[type=iron_golem] 1 punch by @n[type=villager, name="villager_1"]`
 
 ## History
 
